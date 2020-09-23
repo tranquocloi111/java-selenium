@@ -1,0 +1,36 @@
+{
+    "id": 10015,
+    "name": "Bài 1: Thử thách tuần 1",
+    "course_id": 1,
+    "root": 35,
+    "lft": 2,
+    "rgt": 3,
+    "active": 1,
+    "status": 1,
+    "score": 1,
+    "coefficient": 1,
+    "percent_can_pass": 1,
+    "children": [],
+    "lesson_coefficient": [],
+    "lessons": [
+        {
+            "id": 85,
+            "name": "Bài 1: Thử thách tuần 1",
+            "day_can_learn": -8,
+            "type": "video",
+            "videoLink": "mp4:1/01_Lesson_Bai01_mp4jiDAJ1vhY5KzXARTpmnpHNIuyhnyYRUh9ySTznbysV7pwZjVmGl3u3x3lVBjNwBX4tRDQ3c.mp4",
+            "hlsServer": "https://media.kyna.com.vn:1443/vod1/_definst_",
+            "rtmpServer": "rmtp://media.kyna.com.vn:1935/vod2/_definst_",
+            "note": "<h3 style=\"text-align: center;\"><span style=\"font-size: large; color: #339966;\"><strong><span style=\"text-decoration: underline;\">Bài 1:</span> Thử thách tuần 1</strong> </span></h3>\r\n<p style=\"text-align: justify;\"> </p>\r\n<div style=\"text-align: justify;\"><strong>Các điểm chính trong bài học:</strong></div>\r\n<ul style=\"text-align: justify;\">\r\n<li>Giới thiệu bài học các ngày tiếp theo trong tuần này.</li>\r\n<li>Dành thời gian để xác định rõ kỳ vọng khi tham gia khóa học</li>\r\n</ul>\r\n<div style=\"text-align: justify;\"> </div>\r\n<div style=\"text-align: justify;\"><strong>Bài tập thực hành ngày hôm nay:</strong></div>\r\n<div style=\"text-align: justify;\">\r\n<ul>\r\n<li>Xác định thật rõ lý do vì sao bản thân mình cần phải tự tin và giao tiếp tốt hơn</li>\r\n</ul>\r\n</div>\r\n<p style=\"text-align: justify;\"> </p>\r\n<p> </p>",
+            "content": "<div id=\"player\">Loading the player...</div>\r\n<script type=\"text/javascript\">// <![CDATA[\r\njwplayer(\"player\").setup({\r\n            sources: [{\r\n                file: \"rtmpe://video.hanhtrinhdelta.edu.vn:1935/vod/_definst_/mp4:01_Lesson_Bai01.mp4\"\r\n            }],\r\n            rtmp: {\r\n                bufferlength: 4\r\n            },\r\n            image: '/media/images/logo.png',\r\n            height: 390,\r\n            width: 690,\r\n            autostart: 'true'\r\n        });\r\n// ]]></script>",
+            "quiz_id": null,
+            "course_id": 1,
+            "section_id": 10015,
+            "order": 16,
+            "status": 1,
+            "score": 1,
+            "coefficient": 1,
+            "percent_can_pass": 1
+        }
+    ]
+}

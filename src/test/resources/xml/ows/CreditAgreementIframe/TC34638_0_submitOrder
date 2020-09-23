@@ -1,0 +1,48 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ord1:createOrder type="NEW" correlationId="" xsi:schemaLocation="http://order.telco.hsntech.com ShopFront.xsd" xmlns:ord1="http://order.telco.hsntech.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <account accountNumber="$accountNumber$" type="RESIDENTIAL">
+            </account>
+            <verification runCreditCheck="true" termsAndConditionsAccepted="false" refundableDepositAccepted="false" acceptAgreement="false">
+                <interconnect>
+                    <param name="PAYASYOUGO"/>
+                </interconnect>
+            </verification>
+            <orderDetail orderRef="12345" ipAddress="160.206.234.22" salesChannel="Telesales" agentId="TelesaleAgentId" externalSystemID="COCO" devicePrint="21321" paymentMethod="CARD">
+                <dateTime>2011-06-10T16:44:31.0Z</dateTime>
+
+                <orderItem id="1" masterSubscription="true" dealSKU="DEAL100">
+                    <serviceRef reference="Mobile FC Existing"/>
+                    <!--You have a CHOICE of the next 4 items at this level-->
+                    <tariff productCode="FC12-1000-500SO">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </tariff>
+                    <!--You have a CHOICE of the next 2 items at this level-->
+                    <device productCode="HTC-DESIRE-XXX-99">
+                        <deliveryMethod>DELIVER</deliveryMethod>
+                        <unitCharge>99</unitCharge>
+                        <imei>359090017074582</imei>
+                        <serialNumber>123152436457568486784684</serialNumber>
+                        <agreement provider="AGRTESCOMOBILE">
+                            <number></number>
+                        </agreement>
+                    </device>
+                    <discBundle productCode="02000-SB-A" bundleGroup="SB-GRP-A" billCapNotifications="false">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </discBundle>
+                    <insurance productCode="MA">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </insurance>
+                </orderItem>
+                <paymentRequest>
+                    <cardName>CardName</cardName>
+                    <cardNumber>5105105105105100</cardNumber>
+                    <cardType>MA</cardType>
+                    <cardExpiryDate>1222</cardExpiryDate>
+                    <cvv>123</cvv>
+                </paymentRequest>
+            </orderDetail>
+        </ord1:createOrder>
+    </soapenv:Body>
+</soapenv:Envelope>

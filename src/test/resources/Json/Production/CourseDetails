@@ -1,0 +1,79 @@
+{
+    "status": {
+        "code": 200,
+        "message": "success"
+    },
+    "data": {
+        "course_name": "30 bí quyết quản lý thời gian hiệu quả",
+        "attach_file": [
+            {
+                "file_name": "168 Planning sheet",
+                "token": "yqjYp6RykZTSy5iexGGg3p6UX6qmlNjWpdKRnKhimKHX06mb1WCcbGaQlKiaql+dp5fWoZWi12ZlZmhnbZ5kZJJmkqeVnt6Wm55Uhc+Uo9OZoZhUq83Iy63fZ26xZGpqlpRraZlpnQ=="
+            },
+            {
+                "file_name": "Mô Tả công việc trong 24h",
+                "token": "yqjYp6RykZTSy5iexGGg3p6UX6qmlNjWpdKRnKhimKHX06mb1WCcbGaQlKiaql+dp5fWoZWi12ZlZmhnbpxpZpdskqeVnt6yKBpUiUTt2IWT9uWin4XZzxoet5tVp6eh0MhWaJaZ4Wto3WFub2tjbmtrmWw="
+            },
+            {
+                "file_name": "MA TRẬN CÔNG VIỆC EISENHOWER",
+                "token": "yqjYp6RykZTSy5iexGGg3p6UX6qmlNjWpdKRnKhimKHX06mb1WCcbGaQlKiaql+dp5fWoZWi12ZlZmhnbpxpZppmkqeVnt6ypoaIh0Tt4bNQdvTIhqyDvIJE6754U3p7taaEfrGIqoaumGa1aGxobWtplGtobA=="
+            },
+            {
+                "file_name": "Blanking thing to do list",
+                "token": "yqjYp6RykZTSy5iexGGg3p6UX6qmlNjWpdKRnKhimKHX06mb1WCcbGaQlKiaql+dp5fWoZWi12ZlZmhnbpxpZptnkqeVnt6n0ceioMyhnIWkm5qin4XX1VnHn1ihnKim3phsspNmnWhllmNwb28="
+            }
+        ],
+        "chapter": [
+            {
+                "chapter_name": "PHẦN 1: Hiểu đúng về quản trị thời gian",
+                "number_lesson": 4,
+                "section": [
+                    {
+                        "section_name": "Bài 1 : Chuẩn bị gì để chinh phục khóa học này",
+                        "lesson": [
+                            {
+                                "id": 1,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/1/2/5/4/1254_Lesson_C_mp40e8S80MIe3jpHXUSKxpyVidCRpm8vY1pIxNxlR0lIxg2OUJrHt6cNqT2zDXd3q2lLBTFyc7a5eae7WuErVBsSwDfUVyQmmqJMMEY.mp4/playlist.m3u8?v=1584332188",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 2 : Tài khoản mặc định và ngân hàng thời gian",
+                        "lesson": [
+                            {
+                                "id": 2,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai02_mp41lGebBzRPBsYc6kpNVe5ubcfrjGd6JYsucGgw4UIx8780sFiC8uIdGIpmnr0CfaRg92NvTKd0QBDVexrppeNfnqTI7.mp4/playlist.m3u8?v=1584332188",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Tiểu luận khóa học",
+                        "lesson": [
+                            {
+                                "id": 3,
+                                "content": "<table>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t<p>C&acirc;u 1. Ph&acirc;n biệt v&agrave; ph&acirc;n t&iacute;ch nội dung cụ thể của Kế hoạch 168, Kế hoạch 31 v&agrave; Kế hoạch 90.</p>\r\n\r\n\t\t\t<p>C&acirc;u 2.&nbsp; Tr&igrave;nh b&agrave;y ngắn gọn nguy&ecirc;n tắc quản l&yacute; thời gian Parento.</p>\r\n\r\n\t\t\t<p><strong>&lt;script&gt;alert(&#39;aa&#39;)&lt;/script&gt; test</strong></p>\r\n\r\n\t\t\t<p>&nbsp;</p>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>",
+                                "type": 1,
+                                "status": ""
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Khóa học liên quan",
+                        "lesson": [
+                            {
+                                "id": 4,
+                                "content": "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Kh&oacute;a học li&ecirc;n quan</strong></p>\r\n\r\n<p>Bạn th&acirc;n mến,</p>\r\n\r\n<p>Ngo&agrave;i kh&oacute;a học&nbsp;<strong>&ldquo;30 b&iacute; quyết quản l&yacute; thời gian hiệu quả&rdquo;</strong><strong>,</strong>&nbsp;Kyna.vn c&ograve;n c&oacute; c&aacute;c kh&oacute;a học kh&aacute;c nhằm trang bị cho bạn những kiến thức hữu &iacute;ch trong việc quản l&yacute; c&ocirc;ng việc v&agrave; ph&aacute;t triển bản th&acirc;n. Bạn c&oacute; thể tham khảo c&aacute;c kh&oacute;a học sau đ&acirc;y nh&eacute;:</p>\r\n\r\n<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://kyna.vn/quan-ly-thoi-gian\"><strong>Quản l&yacute; thời gian bằng c&ocirc;ng nghệ số</strong></a>&nbsp;(Nguyễn Thanh Minh &ndash; Đồng s&aacute;ng lập DeltaViet Education Corporation): Kh&oacute;a học gi&uacute;p bạn nhận diện c&aacute;c yếu tố g&acirc;y tr&igrave; ho&atilde;n trong c&ocirc;ng việc của bạn. Bạn sẽ học được c&aacute;ch ph&acirc;n loại c&aacute;c c&ocirc;ng việc, l&agrave;m sạch hộp thư cũng như c&aacute;ch thức lập kế hoạch l&agrave;m việc hiệu quả mỗi ng&agrave;y.</p>\r\n\r\n<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://kyna.vn/hoan-thanh-moi-viec-voi-kanban\"><strong>Ho&agrave;n th&agrave;nh mọi việc với Kanban</strong></a>&nbsp;<strong>&nbsp;</strong>(Học viện Agile): Kh&oacute;a học sẽ hướng dẫn bạn c&aacute;ch để &aacute;p dụng m&ocirc; h&igrave;nh Kanban trong quản l&yacute; c&ocirc;ng việc v&agrave; cuộc sống, l&agrave;m sao vượt qua c&aacute;c kh&oacute; khăn v&agrave; n&acirc;ng cao chất lượng c&ocirc;ng việc kh&ocirc;ng ngừng.</p>\r\n\r\n<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://kyna.vn/khoa-hoc/ky-nang-giai-quyet-van-de-va-ra-quyet-dinh\"><strong>Kỹ năng giải quyết vấn đề v&agrave; ra quyết định</strong></a>&nbsp;(Tiến sĩ T&ocirc;n gi&aacute;o học, ĐH Boston Dương Ngọc Dũng): Kh&oacute;a học gi&uacute;p bạn nắm bắt được những c&ocirc;ng cụ cốt l&otilde;i để x&aacute;c định nguy&ecirc;n nh&acirc;n của vấn đề m&igrave;nh đang gặp phải, t&igrave;m kiếm giải ph&aacute;p v&agrave; thực thi c&aacute;c phương &aacute;n, từ đ&oacute; h&igrave;nh th&agrave;nh được Kỹ năng giải quyết vấn đề v&agrave; ra quyết định &ndash; một kỹ năng mềm thiết yếu trong c&ocirc;ng việc v&agrave; cuộc sống.</p>\r\n\r\n<p>&nbsp;Ngo&agrave;i ra, nếu bạn muốn học nhiều kh&oacute;a một l&uacute;c tr&ecirc;n Kyna.vn, bạn c&oacute; thể đăng k&yacute; theo nh&oacute;m c&aacute;c kh&oacute;a học để được hưởng ưu đ&atilde;i l&ecirc;n đến 70% khi thanh to&aacute;n.</p>\r\n\r\n<p>Xem chi tiết tại đ&acirc;y:&nbsp;<a href=\"https://kyna.vn/khuyen-mai-nhom-khoa-hoc/43398\"><strong>Ưu đ&atilde;i theo nh&oacute;m kh&oacute;a học</strong></a></p>",
+                                "type": 1,
+                                "status": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

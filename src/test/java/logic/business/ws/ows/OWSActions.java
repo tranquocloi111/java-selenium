@@ -6,7 +6,6 @@ import framework.utils.RandomCharacter;
 import framework.utils.Soap;
 import framework.utils.Xml;
 import logic.business.ws.BaseWs;
-import logic.pages.agreement.AgreementWrapperPage;
 import logic.utils.Parser;
 import logic.utils.TimeStamp;
 import org.w3c.dom.Element;
@@ -15,22 +14,6 @@ import org.w3c.dom.Node;
 import java.io.File;
 
 public class OWSActions extends BaseWs {
-    public String customerNo;
-    public String orderIdNo;
-    public String fullName;
-    public String username;
-    public String serviceRef;
-    public String firstName;
-    public String lastName;
-    public String password;
-    public String email;
-    public String orderRef;
-    public Xml requestForNextStep;
-    public Xml responseForNextStep;
-    public String subscriptionNumber;
-    public String clubcardPartner;
-    public String tradeIn;
-
     //region XML files
     public static final String EXAMPLE_ORDER = "src\\test\\resources\\xml\\example.xml";
     public static final String FAMILY_PERK_BUNDLE_ORDER = "src\\test\\resources\\xml\\ows\\Family_Perk_Bundle_Order.xml";
@@ -56,6 +39,21 @@ public class OWSActions extends BaseWs {
     private static final String ONLINES_DD_CUSTOMER_WITH_FC_2_BUNDLES = "src\\test\\resources\\xml\\commonrequest\\onlines_DD_customer_with_FC_2_bundles_and_NK2720";
     private static final String GET_CUSTOMER = "src\\test\\resources\\xml\\ows\\getcustomer\\get_customer.xml";
     private static final String GET_ACCOUNT_AUTH = "src\\test\\resources\\xml\\ows\\getaccountauth\\get_account_auth.xml";
+    public String customerNo;
+    public String orderIdNo;
+    public String fullName;
+    public String username;
+    public String serviceRef;
+    public String firstName;
+    public String lastName;
+    public String password;
+    public String email;
+    public String orderRef;
+    public Xml requestForNextStep;
+    public Xml responseForNextStep;
+    public String subscriptionNumber;
+    public String clubcardPartner;
+    public String tradeIn;
     //endregion
 
 
@@ -182,8 +180,6 @@ public class OWSActions extends BaseWs {
 
         String agreementSigningUrl = response.getTextByTagName("URL");
 
-        AgreementWrapperPage.getInstance().openAgreementSigningMainPage(agreementSigningUrl);
-        AgreementWrapperPage.getInstance().signAgreementViaUI(4);
 
         request.setTextByXpath("//createOrder//@correlationId", response.getTextByXpath("//createOrderResponse//@correlationId"));
         request.setTextByXpath("//verification//@termsAndConditionsAccepted", "true");
@@ -236,15 +232,12 @@ public class OWSActions extends BaseWs {
     }
 
 
-
     public Xml createOrderAndSignAgreementByUI(String filePath, int agreementCount) {
         request = new Xml(new File(filePath));
         request.setTextByTagName(commonModMap);
         response = Soap.sendSoapRequestXml(this.owsUrl, request.toSOAPMessage());
 
         String agreementSigningUrl = response.getTextByTagName("URL");
-        AgreementWrapperPage.getInstance().openAgreementSigningMainPage(agreementSigningUrl);
-        AgreementWrapperPage.getInstance().signAgreementViaUI(agreementCount);
 
         request.setTextByXpath("//createOrder//@correlationId", response.getTextByXpath("//createOrderResponse//@correlationId"));
         request.setAttributeTextByXpath("//orderDetail", "orderId", response.getTextByTagName("orderId"));
@@ -271,9 +264,6 @@ public class OWSActions extends BaseWs {
 
         String agreementSigningUrl = response.getTextByTagName("URL");
         String correlation = response.getTextByXpath("//createOrderResponse//@correlationId");
-        AgreementWrapperPage.getInstance().openAgreementSigningMainPage(agreementSigningUrl);
-        AgreementWrapperPage.getInstance().signAgreementViaUI(2);
-
         request.setTextByXpath("//createOrder//@correlationId", correlation);
         request.setTextByXpath("//verification//@termsAndConditionsAccepted", "true");
         request.setTextByXpath("//verification//@acceptAgreement", "true");
@@ -425,8 +415,6 @@ public class OWSActions extends BaseWs {
 
         response = Soap.sendSoapRequestXml(this.owsUrl, request.toSOAPMessage());
         String agreementSigningUrl = response.getTextByTagName("URL");
-        AgreementWrapperPage.getInstance().openAgreementSigningMainPage(agreementSigningUrl);
-        AgreementWrapperPage.getInstance().signAgreementViaUI(1);
         Log.info(response.toString());
         setOrderIdNo();
 
@@ -465,8 +453,6 @@ public class OWSActions extends BaseWs {
         response = Soap.sendSoapRequestXml(this.owsUrl, request.toSOAPMessage());
         Log.info("Response: " + response.toString());
         String agreementSigningUrl = response.getTextByTagName("URL");
-        AgreementWrapperPage.getInstance().openAgreementSigningMainPage(agreementSigningUrl);
-        AgreementWrapperPage.getInstance().signAgreementViaUI(1);
         Log.info(response.toString());
         setOrderIdNo();
 
@@ -502,7 +488,7 @@ public class OWSActions extends BaseWs {
         checkAsyncProcessIsCompleted(orderIdNo);
     }
 
-    public Xml submitFindOrder(String path, String subNo){
+    public Xml submitFindOrder(String path, String subNo) {
         request = new Xml(new File(path));
         request.setTextByTagName("mpn", subNo);
 
@@ -510,7 +496,7 @@ public class OWSActions extends BaseWs {
         return response;
     }
 
-    public Xml submitGetAccountAuth(String username, String password){
+    public Xml submitGetAccountAuth(String username, String password) {
         request = new Xml(new File(GET_ACCOUNT_AUTH));
         request.setTextByTagName("username", username);
         request.setTextByTagName("password", password);
@@ -519,7 +505,7 @@ public class OWSActions extends BaseWs {
         return response;
     }
 
-    public Xml submitGetCustomer(String customerNo){
+    public Xml submitGetCustomer(String customerNo) {
         request = new Xml(new File(GET_CUSTOMER));
         request.setTextByTagName("accountNumber", customerNo);
 
@@ -527,7 +513,7 @@ public class OWSActions extends BaseWs {
         return response;
     }
 
-    public Xml submitFindCustomer(String path, String subscriptionNumber){
+    public Xml submitFindCustomer(String path, String subscriptionNumber) {
         request = new Xml(new File(path));
         request.setTextByTagName("mpn", subscriptionNumber);
 
@@ -535,7 +521,7 @@ public class OWSActions extends BaseWs {
         return response;
     }
 
-    public Xml createOcsCustomerRequest(String path, boolean isValid, String ... params) {
+    public Xml createOcsCustomerRequest(String path, boolean isValid, String... params) {
         request = new Xml(new File(path));
         request.setTextByTagName(commonModMap);
         request.setTextByTagName("billGroupId", "906");
@@ -558,7 +544,7 @@ public class OWSActions extends BaseWs {
                     if (!params[i].isEmpty())
                         request.setTextByXpath("//createOrder//@type", params[i]);
                     break;
-                case 4 :
+                case 4:
                     if (!params[i].isEmpty())
                         request.setTextsByTagName("voucherCode", new String[]{"Clubcard" + RandomCharacter.getRandomNumericString(5), "Tradein" + RandomCharacter.getRandomNumericString(5)});
                     break;
@@ -582,7 +568,7 @@ public class OWSActions extends BaseWs {
         return response;
     }
 
-    public Xml createOcsCustomerRequestWithStringRequest(String strRequest, boolean isValid, String ... params) {
+    public Xml createOcsCustomerRequestWithStringRequest(String strRequest, boolean isValid, String... params) {
         request = new Xml(strRequest);
         request.setTextByTagName(commonModMap);
         request.setTextByTagName("billGroupId", "906");
@@ -605,7 +591,7 @@ public class OWSActions extends BaseWs {
                     if (!params[i].isEmpty())
                         request.setTextByXpath("//createOrder//@type", params[i]);
                     break;
-                case 4 :
+                case 4:
                     if (!params[i].isEmpty())
                         request.setTextsByTagName("voucherCode", new String[]{"Clubcard" + RandomCharacter.getRandomNumericString(5), "Tradein" + RandomCharacter.getRandomNumericString(5)});
                     break;
@@ -643,7 +629,7 @@ public class OWSActions extends BaseWs {
         checkAsyncProcessIsCompleted(orderIdNo);
     }
 
-    public Xml createOcsCustomerRequestAcceptUrl(String path, int numberOfAgreements, String ... params) {
+    public Xml createOcsCustomerRequestAcceptUrl(String path, int numberOfAgreements, String... params) {
         request = new Xml(new File(path));
         request.setTextByTagName(commonModMap);
         request.setTextByTagName("billGroupId", "906");
@@ -667,11 +653,11 @@ public class OWSActions extends BaseWs {
                     if (!params[i].isEmpty())
                         request.setTextByXpath("//createOrder//@type", params[i]);
                     break;
-                case 4 :
+                case 4:
                     if (!params[i].isEmpty())
                         clubcardPartner = "Clubcard" + RandomCharacter.getRandomNumericString(5);
-                        tradeIn = "Tradein" + RandomCharacter.getRandomNumericString(5);
-                        request.setTextsByTagName("voucherCode", new String[]{clubcardPartner, tradeIn});
+                    tradeIn = "Tradein" + RandomCharacter.getRandomNumericString(5);
+                    request.setTextsByTagName("voucherCode", new String[]{clubcardPartner, tradeIn});
                     break;
             }
         }
@@ -681,9 +667,6 @@ public class OWSActions extends BaseWs {
 
         String agreementSigningUrl = response.getTextByTagName("URL");
         String correlation = response.getTextByXpath("//createOrderResponse//@correlationId");
-        AgreementWrapperPage.getInstance().openAgreementSigningMainPage(agreementSigningUrl);
-        AgreementWrapperPage.getInstance().signAgreementViaUI(numberOfAgreements);
-
         request.setTextByXpath("//createOrder//@correlationId", correlation);
         request.setTextByXpath("//verification//@termsAndConditionsAccepted", "true");
         request.setTextByXpath("//verification//@acceptAgreement", "true");
@@ -715,9 +698,6 @@ public class OWSActions extends BaseWs {
 
         String agreementSigningUrl = response.getTextByTagName("URL");
         String correlation = response.getTextByXpath("//createOrderResponse//@correlationId");
-        AgreementWrapperPage.getInstance().openAgreementSigningMainPage(agreementSigningUrl);
-        AgreementWrapperPage.getInstance().signAgreementViaUI(numberOfAgreements);
-
         request.setTextByXpath("//createOrder//@correlationId", correlation);
         request.setTextByXpath("//verification//@termsAndConditionsAccepted", "true");
         request.setTextByXpath("//verification//@acceptAgreement", "true");
@@ -732,6 +712,7 @@ public class OWSActions extends BaseWs {
         Log.info("Order Id: " + orderIdNo);
         checkAsyncProcessIsCompleted(orderIdNo);
     }
+
     public void createACCCustomerWithOrder() {
         createGeneralCustomerOrder("src\\test\\resources\\xml\\ows\\onlines_CC_customer_with_order.xml");
     }
@@ -747,11 +728,12 @@ public class OWSActions extends BaseWs {
     public Xml submitRequestAndReturnRespond(String filePath) {
         request = new Xml(new File(filePath));
         request.setTextByTagName(commonModMap);
-        firstName=request.getTextByTagName("firstName");
-        response= Soap.sendSoapRequestXml(this.owsUrl, request.toSOAPMessage());
+        firstName = request.getTextByTagName("firstName");
+        response = Soap.sendSoapRequestXml(this.owsUrl, request.toSOAPMessage());
         return response;
     }
-    public  Xml submitTheRequest() {
+
+    public Xml submitTheRequest() {
         Log.info("Request: " + request.toString());
         response = Soap.sendSoapRequestXml(this.owsUrl, request.toSOAPMessage());
         Log.info("Response: " + response.toString());
@@ -759,25 +741,41 @@ public class OWSActions extends BaseWs {
         return response;
     }
 
-    public  void buildPaymentCreateOrder( String expiryDate,String xpathFile) {
+
+
+    public void buildPaymentCreateOrder(String expiryDate, String xpathFile) {
         request = new Xml(new File(xpathFile));
         request.setTextByTagName(commonModMap);
         request.setTextByTagName("cardExpiryDate", expiryDate);
 
     }
-public Xml acceptTermsAndContionsForOrder()
-{
-    request.setTextByXpath("//createOrder//@correlationId", response.getTextByXpath("//createOrderResponse//@correlationId"));
-    request.setAttributeTextByXpath("//orderDetail", "orderId", response.getTextByTagName("orderId"));
-    request.setTextByXpath("//verification//@termsAndConditionsAccepted", "true");
-    request.setTextByXpath("//verification//@acceptAgreement", "true");
 
-    Log.info("Request: " + request.toString());
-    response = Soap.sendSoapRequestXml(this.owsUrl, request.toSOAPMessage());
-    Log.info("Response: " + response.toString());
+    public void buildCreateOrder(String customerNo, String xpathFile) {
+        request = new Xml(new File(xpathFile));
+        request.setAttributeTextByXpath("//account", "accountNumber", customerNo);
 
-    return response;
-}
+    }
+
+    public void signAgreementByUI( int agreementCount) {
+
+        String agreementSigningUrl = response.getTextByTagName("URL");
+
+
+    }
+
+    public Xml acceptTermsAndContionsForOrder() {
+        request.setTextByXpath("//createOrder//@correlationId", response.getTextByXpath("//createOrderResponse//@correlationId"));
+        request.setAttributeTextByXpath("//orderDetail", "orderId", response.getTextByTagName("orderId"));
+        request.setTextByXpath("//verification//@termsAndConditionsAccepted", "true");
+        request.setTextByXpath("//verification//@acceptAgreement", "true");
+
+        Log.info("Request: " + request.toString());
+        response = Soap.sendSoapRequestXml(this.owsUrl, request.toSOAPMessage());
+        Log.info("Response: " + response.toString());
+
+        return response;
+    }
+
     //endregion
 
 }

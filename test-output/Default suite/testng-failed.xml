@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="suite.regression.selfcare.TC31887_Self_Care_Add_Family_Perk_Bundle_to_FC_tariff">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="TC31887_Self_Care_Add_Family_Perk_Bundle_to_FC_tariff"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- suite.regression.selfcare.TC31887_Self_Care_Add_Family_Perk_Bundle_to_FC_tariff -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

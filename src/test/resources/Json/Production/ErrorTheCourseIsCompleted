@@ -1,0 +1,7 @@
+{
+    "status": {
+        "code": 1010,
+        "message": "error"
+    },
+    "data": "This course has finished completely"
+}

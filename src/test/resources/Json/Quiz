@@ -1,0 +1,18 @@
+{
+    "id": 871,
+    "course_id": 17,
+    "name": "Trắc nghiệm cuối khóa Khởi nghiệp quán cafe dành cho người không chuyên",
+    "image_url": "",
+    "description": "",
+    "status": 1,
+    "type": 1,
+    "percent_can_pass": 90,
+    "duration": null,
+    "min_score": null,
+    "style_show": null,
+    "is_random_question": null,
+    "is_show_question_explaination": null,
+    "is_show_result_when_done_a_question": null,
+    "is_back_or_next": null,
+    "max_of_redo": null
+}

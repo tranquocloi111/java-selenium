@@ -1,0 +1,15 @@
+{
+    "status": {
+        "code": 200,
+        "message": "success"
+    },
+    "data": {
+        "full_name": "Trần Quốc Lợi",
+        "avatar": "http://staging.vietnamworkslearning.com/build/images/vnwlLogo.png?timestamp=1590552462",
+        "course_complete": "03",
+        "course_not_learn": "01",
+        "roles": [
+            "ROLE_EMPLOYEE"
+        ]
+    }
+}

@@ -1,25 +1,25 @@
 package logic.pages;
 
 import framework.utils.Log;
+import framework.wdm.DriverFactory;
 import framework.wdm.WdManager;
 import logic.business.helper.MiscHelper;
 import logic.utils.Parser;
 import logic.utils.TimeStamp;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.*;
+import org.testng.annotations.Factory;
 
+import java.security.Key;
 import java.util.*;
 
 public class BasePage {
 
     public BasePage() {
-        PageFactory.initElements(WdManager.getAjaxEle(), this);
+        PageFactory.initElements(DriverFactory.getInstance().getDriver(), this);
     }
 
     //region Useful actions
@@ -105,7 +105,13 @@ public class BasePage {
 
     public void click(WebElement element) {
         element.click();
-        waitForPageLoadComplete(90);
+        waitForPageLoadComplete(100);
+    }
+
+    public void doubleClick(WebElement element) {
+        element.click();
+        element.click();
+        waitForPageLoadComplete(100);
     }
 
     public void clickWithOutWait(WebElement element) {
@@ -160,36 +166,13 @@ public class BasePage {
                 return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
             }
         };
-        WebDriverWait wait = new WebDriverWait(getDriver(), specifiedTimeout);
+        WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(), specifiedTimeout);
         wait.until(pageLoadCondition);
     }
 
-    protected void clickSaveButton() {
-        click(getDriver().findElement(By.xpath(".//input[@value='Save']")));
-        waitForPageLoadComplete(60);
-    }
-
-    protected void clickNextBtn() {
-        click(getDriver().findElement(By.xpath(".//input[@value='Next >']")));
-        waitForPageLoadComplete(60);
-    }
-
-    protected void clickDeleteButton() {
-        click(getDriver().findElement(By.xpath(".//input[@value='Delete']")));
-    }
-
-    public void clickReturnToCustomer() {
-        waitForPageLoadComplete(90);
-        click(getDriver().findElement(By.xpath(".//input[@value='Return to Customer']")));
-        waitForPageLoadComplete(90);
-    }
-
-    public void navigate(String url) {
-        getDriver().get(url);
-    }
 
     protected WebDriver getDriver() {
-        return WdManager.get();
+        return DriverFactory.getInstance().getDriver();
     }
 
     public WebElement findTdByLabelAndIndex(String lbl, int index) {
@@ -214,7 +197,7 @@ public class BasePage {
     }
 
     public static void waitUntilVisible(WebElement ele) {
-        WdManager.getWait().until(ExpectedConditions.visibilityOf(ele));
+        DriverFactory.getInstance().getWaitDriver().until(ExpectedConditions.visibilityOf(ele));
     }
 
     public String findValueByLabel(WebElement element, String label) {
@@ -237,21 +220,23 @@ public class BasePage {
     public WebElement findCheckBox(WebElement container, String name) {
         List<WebElement> labels = container.findElements(By.tagName("label"));
         for (WebElement label : labels) {
-            if (label.getText().replace(" ","").equalsIgnoreCase(name.replace(" ",""))) {
+            if (label.getText().replace(" ", "").equalsIgnoreCase(name.replace(" ", ""))) {
                 return label.findElement(By.tagName("input"));
             }
         }
         return null;
     }
-    public WebElement findCheckBox( String name) {
+
+    public WebElement findCheckBox(String name) {
         List<WebElement> labels = getDriver().findElements(By.tagName("label"));
         for (WebElement label : labels) {
-            if (label.getText().replace(" ","").equalsIgnoreCase(name.replace(" ",""))) {
+            if (label.getText().replace(" ", "").equalsIgnoreCase(name.replace(" ", ""))) {
                 return label.findElement(By.tagName("input"));
             }
         }
         return null;
     }
+
     public void clickEditBtnByIndex(int index) {
         getDriver().findElements(By.xpath("//a[contains(text(),'Edit')]")).get(index).click();
 
@@ -264,6 +249,8 @@ public class BasePage {
 
     @FindBy(xpath = "//input[@value='Apply']")
     WebElement applyBtn;
+    @FindBy(xpath = "//button[normalize-space(text())='Submit']")
+    WebElement submitBtn;
 
     public void clickApplyBtn() {
         click((applyBtn));
@@ -287,11 +274,15 @@ public class BasePage {
     }
 
     public void clickSubmitBtn() {
-        click(getDriver().findElement(By.xpath("//a[@id='SubmitBtn']")));
+        click(submitBtn);
     }
 
-    public void clickContinueBtn() {
-        click(getDriver().findElement(By.xpath("//a[@id='ContinueBtn']")));
+    public boolean isSubmitBtnDisplayed() {
+        return getDriver().findElements(By.xpath("//button[normalize-space(text())='Submit']")).size() != 0;
+    }
+
+    public void clickBackToListBtn() {
+        click(DriverFactory.getInstance().getDriver().findElement(By.xpath("//a[normalize-space(text())='Back to list']")));
     }
 
     public WebDriver switchFrameByName(String name) {
@@ -314,7 +305,7 @@ public class BasePage {
     }
 
     public void waitUntilElementClickable(WebElement ele) {
-        WdManager.getWait().until(ExpectedConditions.elementToBeClickable(ele));
+        DriverFactory.getInstance().getWaitDriver().until(ExpectedConditions.elementToBeClickable(ele));
     }
 
     public String getCurrentUrl() {
@@ -352,17 +343,15 @@ public class BasePage {
     }
 
     public void executeJs(String mouseOverScript, WebElement hoverElement) {
-        ((JavascriptExecutor) getDriver()).executeScript(mouseOverScript,hoverElement);
+        ((JavascriptExecutor) getDriver()).executeScript(mouseOverScript, hoverElement);
     }
 
-    public void closeCurrentBrowser()
-    {
+    public void closeCurrentBrowser() {
         getDriver().close();
     }
 
-    public String getTitle()
-    {
-       return getDriver().getTitle();
+    public String getTitle() {
+        return getDriver().getTitle();
     }
 
     public String getNextAllowanceDate() {
@@ -398,14 +387,127 @@ public class BasePage {
 
     }
 
+    protected WebElement findLable(String label) {
+        String xpath = String.format("//label[normalize-space(text())='%s']", label);
+        return DriverFactory.getInstance().getDriver().findElement(By.xpath(xpath));
+    }
+
+    protected List<WebElement> findLables(String label) {
+        String xpath = String.format("//label[normalize-space(text())='%s']", label);
+        return DriverFactory.getInstance().getDriver().findElements(By.xpath(xpath));
+    }
+
+    protected WebElement findInputByLabel(String label) {
+        return findLable(label).findElement(By.xpath("./following-sibling::input"));
+    }
+
+    protected WebElement findInputByDiv(String label) {
+        return findDivByLabel(label).findElement(By.xpath("./following-sibling::input"));
+    }
+
+    protected WebElement findDivByLabel(String label) {
+        return findLable(label).findElement(By.xpath("./following-sibling::div"));
+    }
+    protected List<WebElement> findDivsByLabel(String label) {
+        List<WebElement> labels= findLables(label);
+        List<WebElement> divs= new ArrayList<>();
+        for(WebElement element : labels){
+            divs.add(element.findElement(By.xpath("./following-sibling::div")));
+        }
+        return divs;
+    }
+
+    protected WebElement findButtonBy(String Text) {
+        String xpath = String.format("//button[normalize-space(text())='%s']", Text);
+        return DriverFactory.getInstance().getDriver().findElement(By.xpath(xpath));
+    }
+
+    protected WebElement findSelectByLabel(String label) {
+        return findDivByLabel(label).findElement(By.xpath("./select"));
+    }
+
+    public void selectDropDownListByVisibleTextAndLabel(String label, String text) {
+        Select select = new Select(findSelectByLabel(label));
+        select.selectByVisibleText(text);
+    }
+
+    public void setDateByLabel(WebElement calenderElement, String label, int numberNextMonth, String date) {
+        click(findDivByLabel(label).findElement(By.xpath(".//input")));
+        DateTimePicker dateTimePicker = new DateTimePicker(calenderElement);
+        dateTimePicker.nextMonth(numberNextMonth);
+        dateTimePicker.selectDate(date);
+    }
+
+    @FindBy(xpath = "//input[@type='search']")
+    WebElement searchInput;
+
+    protected void searchAutoCompleteInputByLabel(String label,String value){
+        WebElement element = findSpanByText(label);
+        click(element);
+        enterValueByLabel(searchInput,value);
+        String xpath= String.format("//li[text()='%s']",value);
+        click(getDriver().findElement(By.xpath(xpath)));
+    }
+
+    protected WebElement findSpanByText(String text){
+        String xpath =String.format("//span[text()='%s']",text);
+       return DriverFactory.getInstance().getDriver().findElement(By.xpath(xpath));
+    }
+
+    protected List<WebElement> findSpansByLabel(String label){
+        List<WebElement> elementList=findDivsByLabel(label);
+        List<WebElement> spanLists = new ArrayList<>();
+        for(WebElement element: elementList){
+           spanLists.add(element.findElement(By.xpath(".//span")));
+        }
+        return spanLists;
+    }
+    protected List<WebElement> findInputsByLabel(String label){
+        List<WebElement> elementList=findDivsByLabel(label);
+        List<WebElement> inputList = new ArrayList<>();
+        for(WebElement element: elementList){
+            inputList.add(element.findElement(By.xpath(".//input")));
+        }
+        return inputList;
+    }
+
+    protected void enterKeyPerform(WebElement element){
+        element.sendKeys(Keys.ENTER);
+    }
+
+    public WebElement findCheckBoxByLabel(String label) {
+        return findDivByLabel(label).findElement(By.xpath(".//input[@type='checkbox']"));
+    }
+
+    public boolean verifyCheckBoxIsCheckedByLabel(String label) {
+        return findCheckBoxByLabel(label).isSelected();
+    }
+
+
     public void waitUntilSpecificTime(int second) {
         try {
-            Thread.sleep(1000*second);
+            Thread.sleep(1000 * second);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
+    @FindBy(xpath = "//a[normalize-space(text())='Create new']")
+    WebElement createNewBtn;
+
+    public void clickCreateNewBtn() {
+        waitUntilElementClickable(createNewBtn);
+        click(createNewBtn);
+    }
+
+    public static WebElement getAElementByText(String text) {
+        List<WebElement> webElementList = DriverFactory.getInstance().getDriver().findElements(By.xpath("//a"));
+        for (WebElement el : webElementList) {
+            if (el.getText().equalsIgnoreCase(text))
+                return el;
+        }
+        return webElementList.get(0);
+    }
     //endregion
 }
 

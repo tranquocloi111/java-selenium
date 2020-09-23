@@ -1,0 +1,75 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ord1:createOrder type="NEW" correlationId="" xsi:schemaLocation="http://order.telco.hsntech.com ShopFront.xsd" xmlns:ord1="http://order.telco.hsntech.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <account accountNumber="$accountNumber$" type="RESIDENTIAL"></account>
+            <verification runCreditCheck="true" termsAndConditionsAccepted="true" refundableDepositAccepted="false" acceptAgreement="true">
+                <interconnect>
+                    <param name="PAYASYOUGO"/>
+                </interconnect>
+            </verification>
+            <orderDetail orderRef="12345" ipAddress="160.206.234.22"  salesChannel="Onlines" agentId="Rhonda" branchId="BRANCH001" externalSystemID="COCO" paymentMethod="TILL">
+                <dateTime>2011-06-10T16:44:31.0Z</dateTime>
+                <orderItem id="1" dealSKU="DEAL-100" masterSubscription="true">
+                    <serviceRef reference="Mobile 1"/>
+                    <tariff productCode="FC12-1000-500SO">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </tariff>
+                    <device productCode="SIM-ONLY">
+                        <deliveryMethod>DELIVER</deliveryMethod>
+                    </device>
+                    <discBundle productCode="00750-SB-A" bundleGroup="SB-GRP-A" billCapNotifications="false">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </discBundle>
+                    <insurance productCode="MA">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </insurance>
+                </orderItem>
+                <orderItem id="2" dealSKU="DEAL-100" masterSubscription="false">
+                    <serviceRef reference="Mobile 2"/>
+                    <tariff productCode="FC24-2000-500">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </tariff>
+                    <device productCode="HTC-DESIRE-XXX-99">
+                        <deliveryMethod>DELIVER</deliveryMethod>
+                        <imei>359090017074582</imei>
+                        <serialNumber>123152436457568486784684</serialNumber>
+                        <agreement provider="AGRTESCOMOBILE">
+                            <number>AGR12343256546745754778</number>
+                        </agreement>
+                    </device>
+                    <discBundle productCode="00750-SB-A" bundleGroup="SB-GRP-A" billCapNotifications="false">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </discBundle>
+                    <insurance productCode="MA">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </insurance>
+                </orderItem>
+                <orderItem id="3" dealSKU="DEAL-100" masterSubscription="false">
+                    <serviceRef reference="Mobile 3"/>
+                    <tariff productCode="NC1-1000-250">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </tariff>
+                    <device productCode="HTC-DESIRE-XXX-99">
+                        <deliveryMethod>DELIVER</deliveryMethod>
+                        <imei>359090017074582</imei>
+                        <serialNumber>123152436457568486764484</serialNumber>
+                        <agreement provider="AGRTESCOMOBILE">
+                            <number>AGR123432565467123455778</number>
+                        </agreement>
+                    </device>
+                    <discBundle bundleGroup="STANDARDDATACAPPED" productCode="1GB-DATA-750-NC">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </discBundle>
+                    <insurance productCode="MA">
+                        <deliveryMethod>INHAND</deliveryMethod>
+                    </insurance>
+                </orderItem>
+                <receipt type="TILL" dateTime="2014-10-13T09:44:31.0Z">
+                    <reference>1234123412341</reference>
+                    <amount>200</amount>
+                </receipt>
+            </orderDetail>
+        </ord1:createOrder>
+    </soapenv:Body>
+</soapenv:Envelope>

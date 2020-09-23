@@ -9,7 +9,7 @@ public class Db {
 
     public static Connection createConnection(String url, String userName, String password) throws SQLException {
         try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

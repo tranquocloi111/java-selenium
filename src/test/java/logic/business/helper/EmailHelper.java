@@ -43,8 +43,6 @@ public class EmailHelper {
         return instance;
     }
 
-
-
     public String getPasswordFromEmail(String body) {
         String input = "Your password is:";
         int index = body.indexOf(input);
@@ -55,6 +53,12 @@ public class EmailHelper {
         String input = "please visit ";
         int index = body.indexOf(input);
         return body.substring(index + 13, 325);
+    }
+    public void getAllEmail(String body) {
+      try {
+          email.getMailBody("inbox"," ");
+      }catch (Exception ex)
+      {}
     }
 
     public String extractPasswordEmailByFolderNameAndEmailSubject(String folderName, String subjectEmail) {

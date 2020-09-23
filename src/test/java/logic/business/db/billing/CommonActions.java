@@ -3,17 +3,11 @@ package logic.business.db.billing;
 import framework.config.Config;
 import framework.utils.Log;
 import logic.business.db.OracleDB;
-import logic.business.entities.PaymentGatewayEnity;
-import logic.business.entities.PaymentGatewayRespondEnity;
-import logic.business.helper.FTPHelper;
-import logic.business.helper.MiscHelper;
-import logic.pages.care.find.PaymentPage;
 import logic.utils.Parser;
 import logic.utils.TimeStamp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;

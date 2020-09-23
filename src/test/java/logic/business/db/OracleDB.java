@@ -187,6 +187,8 @@ public class OracleDB extends Db {
         }
         return result;
     }
+
+
     public int executeNonQueryWithoutTrigger(String disable, String enable,String sql) {
         allowUpdating();
         return executeNonQueryWithOutTrigger(createConnection(),disable,enable, sql);

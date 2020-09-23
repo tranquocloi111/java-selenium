@@ -1,0 +1,15 @@
+{
+    "status": {
+        "code": 200,
+        "message": "success"
+    },
+    "data": {
+        "id": 105,
+        "employee_id": 300,
+        "course_id": 1,
+        "finish_lessons": 0,
+        "finish_sections": 0,
+        "learning_time": 1,
+        "total_learning_duration": 8738
+    }
+}

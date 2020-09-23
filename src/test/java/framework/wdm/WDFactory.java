@@ -32,7 +32,9 @@ public class WDFactory {
     }
 
     public static WebDriver initBrowser(final String browserName) {
-        return initBrowser(Browser.getBrowserByName(browserName), null);
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("headless");
+        return initBrowser(Browser.getBrowserByName(browserName));
     }
 
     /**

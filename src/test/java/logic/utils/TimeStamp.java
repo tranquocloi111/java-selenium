@@ -394,21 +394,14 @@ public class TimeStamp {
         return Date.valueOf(LocalDate.now().plusMonths(2).minusDays(15));
     }
 
-    public static Date getExactDate(int currentMonth, int expectedMonth){
-        Calendar calendar = Calendar.getInstance();
-        int year = calendar.get(Calendar.YEAR);;
-        int date = 1;
-        calendar.set(year, currentMonth - 1, date);
-        int maxCurrDay = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
-        calendar.set(year, expectedMonth - 1, date);
-        int maxExpectedDay = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
-        int day = maxExpectedDay - maxCurrDay;
-        return Date.valueOf(LocalDate.now().plusMonths(expectedMonth - currentMonth).plusDays(day));
-    }
-
     public static long getDateBetweenMonth(Date actual, Date expected) {
         LocalDate day1 = actual.toLocalDate();
         LocalDate day2 = expected.toLocalDate();
         return ChronoUnit.DAYS.between(day2, day1);
+    }
+    public static String getCurrentDate(){
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy hh:mma");
+        LocalDateTime now = LocalDateTime.now();
+        return dtf.format(now);
     }
 }

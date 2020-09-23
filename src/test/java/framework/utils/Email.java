@@ -29,7 +29,7 @@ public class Email {
         Session session = Session.getDefaultInstance(setProperties(), null);
         Store store = null;
         try {
-            store = session.getStore(protocal);
+            store = session.getStore("imaps");
             store.connect(host, userName, passWord);
         } catch (NoSuchProviderException e) {
             e.printStackTrace();
@@ -323,7 +323,6 @@ public class Email {
             props.setProperty("mail.imaps.connectiontimeout", "3000000");
             props.setProperty("mail.imaps.timeout", "90000000");
         }
-
         return  props;
     }
 

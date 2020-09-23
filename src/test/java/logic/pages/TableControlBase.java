@@ -1,6 +1,7 @@
 package logic.pages;
 
 //import javafx.util.Pair;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -244,7 +245,12 @@ public class TableControlBase extends BasePage {
         int columnIndex = 0;
         List<WebElement> header = element.findElements(By.tagName("tr"));
         for (WebElement row : header) {
-            List<WebElement> cols = row.findElements(By.xpath("td"));
+            List<WebElement> cols;
+            if (row.findElements(By.xpath("td")).size() > 0) {
+                cols = row.findElements(By.xpath("td"));
+            } else {
+                cols = row.findElements(By.xpath("th"));
+            }
             for (WebElement col : cols) {
                 String str = col.getText();
                 if (str.equals(columnName)) {
@@ -255,6 +261,7 @@ public class TableControlBase extends BasePage {
         }
         return columnIndex;
     }
+
     private int getColumnIndexTagTh(String columnName) {
         int columnIndex = 0;
         List<WebElement> header = element.findElements(By.tagName("tr"));
@@ -315,6 +322,12 @@ public class TableControlBase extends BasePage {
         return column;
     }
 
+    public boolean compareTwoMaps(HashMap<String, String> expectedResult, HashMap<String, String> actualResult) {
+        Set<String> valueSet1 = new HashSet<String>(expectedResult.values());
+        Set<String> valueSet2 = new HashSet<String>(actualResult.values());
+        return valueSet1.equals(valueSet2);
+    }
+
     public List<WebElement> findRowsByColumns(HashMap<String, String> columns) {
         int columnIndex = 0;
         boolean flag = false;
@@ -328,12 +341,13 @@ public class TableControlBase extends BasePage {
                 String columnName = (String) mapElement.getKey();
                 String cellValue = (String) mapElement.getValue();
                 columnIndex = getColumnIndex(columnName);
-                String elementText="";
+                String elementText = "";
                 try {
                     elementText = el.findElements(By.tagName("td")).get(columnIndex).getText();
-                }catch (Exception ex){}
-                elementText=elementText.replace(" ","");
-                cellValue=cellValue.replace(" ","");
+                } catch (Exception ex) {
+                }
+                elementText = elementText.replace(" ", "");
+                cellValue = cellValue.replace(" ", "");
                 if (elementText.equalsIgnoreCase(cellValue) && !isFail) {
                     flag = true;
                     isFail = false;
@@ -350,30 +364,47 @@ public class TableControlBase extends BasePage {
         }
         return column;
     }
-    public List<WebElement> findRowsByColumns(AbstractMap.SimpleEntry<String, String> ... pairs) {
+
+    public List<WebElement> findARowByColumns(HashMap<String, String> columns) {
         int columnIndex = 0;
         boolean flag = false;
-        boolean isFail = true;
+        boolean isFail;
         WebElement elm = null;
         List<WebElement> column = new ArrayList<>();
         List<WebElement> body = getBody();
-        for (AbstractMap.SimpleEntry<String, String> p : pairs) {
-            String columnName = p.getKey();
-            String cellValue = p.getValue();
-            columnIndex = getColumnIndex(columnName);
-            for (WebElement el : body) {
-                if (el.findElements(By.tagName("td")).get(columnIndex).getText().equalsIgnoreCase(cellValue)) {
+        for (WebElement el : body) {
+            isFail = false;
+            for (Map.Entry mapElement : columns.entrySet()) {
+                String columnName = (String) mapElement.getKey();
+                String cellValue = (String) mapElement.getValue();
+                columnIndex = getColumnIndex(columnName);
+                String elementText = "";
+                try {
+                    elementText = el.findElements(By.tagName("td")).get(columnIndex).getText();
+                } catch (Exception ex) {
+                }
+                elementText = elementText.replace(" ", "");
+                cellValue = cellValue.replace(" ", "");
+                if (elementText.equalsIgnoreCase(cellValue) && !isFail) {
                     flag = true;
-                    column.add(el);
-                    //break;
+                    isFail = false;
                 } else {
                     flag = false;
-                    //break;
+                    isFail = true;
+                    break;
                 }
+            }
+            if (flag && !isFail) {
+                elm = el;
+                column.add(elm);
+            }
+            if (column.size() == 1) {
+                break;
             }
         }
         return column;
     }
+
 
     public List<WebElement> getRowsByColumnsWithIndex(String[] cellValue) {
         List<Boolean> listChecked = new ArrayList<>();
@@ -443,14 +474,15 @@ public class TableControlBase extends BasePage {
     public List<WebElement> getAllRows() {
         return element.findElements(By.tagName("tr"));
     }
+
     public List<List<String>> getAllCellValue() {
         List<List<String>> hashMapList = new ArrayList<>();
         List<WebElement> body = getBody();
         for (int i = 1; i < body.size(); i++) {
             List<String> list = new ArrayList<>();
             List<WebElement> td = body.get(i).findElements(By.tagName("td"));
-            for (int y = 0; y < td.size(); y ++) {
-                    list.add(td.get(y).getText());
+            for (int y = 0; y < td.size(); y++) {
+                list.add(td.get(y).getText());
             }
             hashMapList.add(list);
         }
@@ -466,6 +498,7 @@ public class TableControlBase extends BasePage {
             return null;
         }
     }
+
     public int countTrElements() {
         return element.findElements(By.xpath(".//tr")).size();
     }
@@ -485,8 +518,8 @@ public class TableControlBase extends BasePage {
                 String cellValue = (String) mapElement.getValue();
                 columnIndex = getColumnIndexTagTh(columnName);
                 String elementText = el.findElements(By.tagName("td")).get(columnIndex).getText();
-                elementText=elementText.replace(" ","");
-                cellValue=cellValue.replace(" ","");
+                elementText = elementText.replace(" ", "");
+                cellValue = cellValue.replace(" ", "");
                 if (elementText.equalsIgnoreCase(cellValue) && !isFail) {
                     flag = true;
                     isFail = false;
@@ -522,7 +555,7 @@ public class TableControlBase extends BasePage {
         for (int i = 0; i < body.size(); i++) {
             List<String> list = new ArrayList<>();
             List<WebElement> td = body.get(i).findElements(By.tagName("td"));
-            for (int y = 0; y < td.size(); y ++) {
+            for (int y = 0; y < td.size(); y++) {
                 list.add(td.get(y).getText());
             }
             hashMapList.add(list);
@@ -536,14 +569,15 @@ public class TableControlBase extends BasePage {
         List<WebElement> column = new ArrayList<>();
         List<WebElement> body = getBody();
         columnIndex = getColumnIndex(columnName);
-        for (int i=1;i<body.size();i++) {
+        for (int i = 1; i < body.size(); i++) {
             column.add(body.get(i).findElements(By.tagName("td")).get(columnIndex));
         }
         return column;
     }
+
     public List<WebElement> getRowSByColumnNameAndCellValue(String columnName, String cellValue) {
         List<WebElement> body = getBody();
-        List<WebElement> el= new ArrayList<>();
+        List<WebElement> el = new ArrayList<>();
         int columnIndex = getColumnIndex(columnName);
         for (WebElement element : body) {
             if (element.findElements(By.tagName("td")).get(columnIndex).getText().equalsIgnoreCase(cellValue)) {
@@ -553,4 +587,40 @@ public class TableControlBase extends BasePage {
         return el;
     }
 
+    public List<WebElement> findRowsByLinkedMap(HashMap<String, String> columns, int columnNumber) {
+        int columnIndex = 0;
+        boolean flag = false;
+        boolean isFail;
+        WebElement elm = null;
+        List<WebElement> column = new ArrayList<>();
+        List<WebElement> body = getBody();
+        for (WebElement el : body) {
+            isFail = false;
+            for (Map.Entry mapElement : columns.entrySet()) {
+                String columnName = (String) mapElement.getKey();
+                String cellValue = (String) mapElement.getValue();
+                columnIndex = getColumnIndex(columnName);
+                String elementText = "";
+                try {
+                    elementText = el.findElements(By.tagName("td")).get(columnIndex).getText();
+                } catch (Exception ex) {
+                }
+                elementText = elementText.replace(" ", "");
+                cellValue = cellValue.replace(" ", "");
+                if (elementText.equalsIgnoreCase(cellValue) && !isFail) {
+                    flag = true;
+                    isFail = false;
+                } else {
+                    flag = false;
+                    isFail = true;
+                    break;
+                }
+            }
+            if (flag && !isFail) {
+                elm = el;
+                column.add(elm);
+            }
+        }
+        return column;
+    }
 }

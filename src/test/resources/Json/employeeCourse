@@ -1,0 +1,127 @@
+{
+    "status": {
+        "code": 200,
+        "message": "success"
+    },
+    "data": {
+        "1": {
+            "title": "Kỹ năng công việc",
+            "data": [
+                {
+                    "id": 133,
+                    "image_url": "course/2020/03/20/5e7496d964c52.jpg",
+                    "name": "30 bí quyết quản lý thời gian hiệu quả",
+                    "author": "Huỳnh Ngọc Minh",
+                    "progress": 69.64,
+                    "start_date": "23/03/2020 02:04 PM",
+                    "day_qty": 0
+                },
+                {
+                    "id": 798,
+                    "image_url": "course/2020/03/20/5e7496d964c52.jpg",
+                    "name": "30 bí quyết quản lý thời gian hiệu quả",
+                    "author": "Huỳnh Ngọc Minh",
+                    "progress": 0,
+                    "start_date": "31/03/2020 06:05 PM",
+                    "day_qty": 24.5
+                },
+                {
+                    "id": 1040,
+                    "image_url": "course/2020/03/20/5e7496d964c52.jpg",
+                    "name": "30 bí quyết quản lý thời gian hiệu quả",
+                    "author": "Huỳnh Ngọc Minh",
+                    "progress": 0.02,
+                    "start_date": "03/04/2020 11:30 AM",
+                    "day_qty": 634.5
+                }
+            ]
+        },
+        "2": {
+            "title": "Kĩ năng lãnh đạo",
+            "data": [
+                {
+                    "id": 147,
+                    "image_url": "course/2020/03/20/5e7496fa4276f.jpg",
+                    "name": "Tạo động lực làm việc cho nhân viên",
+                    "author": "Phan Văn Sơn",
+                    "progress": 70.89,
+                    "start_date": "24/03/2020 10:30 AM",
+                    "day_qty": 0
+                },
+                {
+                    "id": 799,
+                    "image_url": "course/2020/03/20/5e7496fa4276f.jpg",
+                    "name": "Tạo động lực làm việc cho nhân viên",
+                    "author": "Phan Văn Sơn",
+                    "progress": 47.1,
+                    "start_date": "31/03/2020 06:06 PM",
+                    "day_qty": 24.5
+                }
+            ]
+        },
+        "3": {
+            "title": "Phát triển cá nhân",
+            "data": [
+                {
+                    "id": 148,
+                    "image_url": "course/2020/03/20/5e7497403c0eb.jpg",
+                    "name": "Làm chủ cảm xúc trong mọi hoàn cảnh",
+                    "author": "Hành Trang Sống",
+                    "progress": 100.0,
+                    "start_date": "24/03/2020 10:30 AM",
+                    "day_qty": 0
+                },
+                {
+                    "id": 800,
+                    "image_url": "course/2020/03/20/5e7497403c0eb.jpg",
+                    "name": "Làm chủ cảm xúc trong mọi hoàn cảnh",
+                    "author": "Hành Trang Sống",
+                    "progress": 25.0,
+                    "start_date": "31/03/2020 06:08 PM",
+                    "day_qty": 24.5
+                },
+                {
+                    "id": 803,
+                    "image_url": "course/2020/03/20/5e7497403c0eb.jpg",
+                    "name": "Làm chủ cảm xúc trong mọi hoàn cảnh",
+                    "author": "Hành Trang Sống",
+                    "progress": 0,
+                    "start_date": "01/04/2020 10:57 AM",
+                    "day_qty": 24.5
+                }
+            ]
+        },
+        "4": {
+            "title": "Giao tiếp-Thuyết trình",
+            "data": [
+                {
+                    "id": 149,
+                    "image_url": "course/2020/03/31/5e82c997c5fbd.jpg",
+                    "name": "Kỹ năng thuyết trình và nói trước công chúng",
+                    "author": "Nguyễn Hoàng Khắc Hiếu",
+                    "progress": 100.0,
+                    "start_date": "24/03/2020 10:30 AM",
+                    "day_qty": 0
+                },
+                {
+                    "id": 151,
+                    "image_url": "course/2020/03/20/5e749726e0b44.jpg",
+                    "name": "Kỹ năng giao tiếp nơi công sở",
+                    "author": "Nguyễn Duy Khánh",
+                    "progress": 100.0,
+                    "start_date": "24/03/2020 10:33 AM",
+                    "day_qty": 0
+                },
+                {
+                    "id": 804,
+                    "image_url": "course/2020/03/20/5e749726e0b44.jpg",
+                    "name": "Kỹ năng giao tiếp nơi công sở",
+                    "author": "Nguyễn Duy Khánh",
+                    "progress": 0,
+                    "start_date": "01/04/2020 10:58 AM",
+                    "day_qty": 24.5
+                }
+            ]
+        }
+    }
+}

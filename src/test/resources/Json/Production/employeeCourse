@@ -1,0 +1,73 @@
+{
+    "status": {
+        "code": 200,
+        "message": "success"
+    },
+    "data": {
+        "1": {
+            "title": "Kỹ năng công việc",
+            "data": [
+                {
+                    "id": 3,
+                    "image_url": "course/2020/03/09/5e65b0928af45.jpg",
+                    "name": "30 bí quyết quản lý thời gian hiệu quả",
+                    "author": "Huỳnh Ngọc Minh",
+                    "progress": 44.24,
+                    "start_date": "06/03/2020 04:05 PM",
+                    "day_qty": 377.0
+                }
+            ]
+        },
+        "2": {
+            "title": "Kĩ năng lãnh đạo",
+            "data": [
+                {
+                    "id": 11,
+                    "image_url": "course/2020/03/07/5e630554cd8ca.jpg",
+                    "name": "Tạo động lực làm việc cho nhân viên",
+                    "author": "Phan Văn Sơn",
+                    "progress": 12.46,
+                    "start_date": "09/03/2020 09:32 AM",
+                    "day_qty": 287.0
+                }
+            ]
+        },
+        "3": {
+            "title": "Phát triển cá nhân",
+            "data": [
+                {
+                    "id": 17,
+                    "image_url": "course/2020/03/07/5e630b45422ce.jpg",
+                    "name": "Làm chủ cảm xúc trong mọi hoàn cảnh",
+                    "author": "Hành Trang Sống",
+                    "progress": 0.05,
+                    "start_date": "09/03/2020 05:31 PM",
+                    "day_qty": 287.0
+                }
+            ]
+        },
+        "4": {
+            "title": "Giao tiếp-Thuyết trình",
+            "data": [
+                {
+                    "id": 86,
+                    "image_url": "course/2020/03/07/5e6310c430442.jpg",
+                    "name": "Kỹ năng thuyết trình và nói trước công chúng",
+                    "author": "Nguyễn Hoàng Khắc Hiếu",
+                    "progress": 0.0,
+                    "start_date": "16/03/2020 09:53 AM",
+                    "day_qty": 287.0
+                },
+                {
+                    "id": 87,
+                    "image_url": "course/2020/03/07/5e63163371743.jpg",
+                    "name": "Kỹ năng giao tiếp nơi công sở",
+                    "author": "Nguyễn Duy Khánh",
+                    "progress": 0.01,
+                    "start_date": "16/03/2020 09:54 AM",
+                    "day_qty": 287.0
+                }
+            ]
+        }
+    }
+}

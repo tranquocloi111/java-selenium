@@ -1,0 +1,717 @@
+{
+    "items": [
+        {
+            "id": 4895,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Theo bạn c&oacute; mấy m&ocirc; h&igrave;nh qu&aacute;n caf&eacute;?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15265,
+                    "question_id": 4895,
+                    "content": "<p>1</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14088,
+                    "status": 1
+                },
+                {
+                    "id": 15266,
+                    "question_id": 4895,
+                    "content": "<p>2</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14089,
+                    "status": 1
+                },
+                {
+                    "id": 15267,
+                    "question_id": 4895,
+                    "content": "<p>3</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14090,
+                    "status": 1
+                },
+                {
+                    "id": 15268,
+                    "question_id": 4895,
+                    "content": "<p>4</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14091,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4896,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Theo bạn, m&ocirc; h&igrave;nh qu&aacute;n caf&eacute; hộp c&oacute; đặc điểm g&igrave;?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15269,
+                    "question_id": 4896,
+                    "content": "<p>Chi ph&iacute; đầu tư &iacute;t</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14092,
+                    "status": 1
+                },
+                {
+                    "id": 15270,
+                    "question_id": 4896,
+                    "content": "<p>Chi ph&iacute; đầu tư kh&aacute; lớn</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14093,
+                    "status": 1
+                },
+                {
+                    "id": 15271,
+                    "question_id": 4896,
+                    "content": "<p>Chi ph&iacute; đầu tư nhiều</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14094,
+                    "status": 1
+                },
+                {
+                    "id": 15272,
+                    "question_id": 4896,
+                    "content": "<p>Chi ph&iacute; đầu tư rất nhiều</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14095,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4897,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Ph&acirc;n kh&uacute;c c&aacute;c loại xe trong qu&aacute;n caf&eacute; bao gồm c&aacute;c loại xe g&igrave;?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15273,
+                    "question_id": 4897,
+                    "content": "<p>Xe đạp</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14096,
+                    "status": 1
+                },
+                {
+                    "id": 15274,
+                    "question_id": 4897,
+                    "content": "<p>Xe tay ga</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14097,
+                    "status": 1
+                },
+                {
+                    "id": 15275,
+                    "question_id": 4897,
+                    "content": "<p>Xe số</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14098,
+                    "status": 1
+                },
+                {
+                    "id": 15276,
+                    "question_id": 4897,
+                    "content": "<p>Tất cả 3 phương &aacute;n tr&ecirc;n</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14099,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4898,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Địa điểm mua ly, t&aacute;ch với gi&aacute; rẻ l&agrave; ở đ&acirc;u?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15277,
+                    "question_id": 4898,
+                    "content": "<p>Đường Ho&agrave;ng Hoa Th&aacute;m</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14100,
+                    "status": 1
+                },
+                {
+                    "id": 15278,
+                    "question_id": 4898,
+                    "content": "<p>Đường Nguyễn Th&uacute;c Nguy&ecirc;n</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14101,
+                    "status": 1
+                },
+                {
+                    "id": 15279,
+                    "question_id": 4898,
+                    "content": "<p>Đường Phan Văn Trị</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14102,
+                    "status": 1
+                },
+                {
+                    "id": 15280,
+                    "question_id": 4898,
+                    "content": "<p>Đường L&iacute; Thường Kiệt</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14103,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4899,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Theo bạn, n&ecirc;n lựa chọn người hợp t&aacute;c như thế n&agrave;o?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15281,
+                    "question_id": 4899,
+                    "content": "<p>2 người th&iacute;ch kinh doanh</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14104,
+                    "status": 1
+                },
+                {
+                    "id": 15282,
+                    "question_id": 4899,
+                    "content": "<p>2 người th&iacute;ch bu&ocirc;n b&aacute;n</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14105,
+                    "status": 1
+                },
+                {
+                    "id": 15283,
+                    "question_id": 4899,
+                    "content": "<p>1 người th&iacute;ch kinh doanh- 1 người th&iacute;ch bu&ocirc;n b&aacute;n</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14106,
+                    "status": 1
+                },
+                {
+                    "id": 15284,
+                    "question_id": 4899,
+                    "content": "<p>2 người c&ugrave;ng th&iacute;ch kinh doanh- 2 người c&ugrave;ng th&iacute;ch bu&ocirc;n b&aacute;n</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14107,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4900,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>&hellip; Quản l&iacute; d&ograve;ng tiền thu chi</p>\r\n<p>&hellip; Mua nguy&ecirc;n vật liệu</p>\r\n<p>Theo bạn ai l&agrave; người sẽ đảm nhiệm nhiệm vụ n&agrave;y?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15285,
+                    "question_id": 4900,
+                    "content": "<p>Giữ xe</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14108,
+                    "status": 1
+                },
+                {
+                    "id": 15286,
+                    "question_id": 4900,
+                    "content": "<p>Quản l&iacute;</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14109,
+                    "status": 1
+                },
+                {
+                    "id": 15287,
+                    "question_id": 4900,
+                    "content": "<p>Thu ng&acirc;n</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14110,
+                    "status": 1
+                },
+                {
+                    "id": 15288,
+                    "question_id": 4900,
+                    "content": "<p>marketing</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14111,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4901,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Theo bạn, tr&aacute;ch nhiệm của người phục vụ l&agrave; l&agrave;m g&igrave;?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15289,
+                    "question_id": 4901,
+                    "content": "<p>Tươi cười, ch&agrave;o hỏi khi kh&aacute;ch tới</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14112,
+                    "status": 1
+                },
+                {
+                    "id": 15290,
+                    "question_id": 4901,
+                    "content": "<p>Trực điện thoại</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14113,
+                    "status": 1
+                },
+                {
+                    "id": 15291,
+                    "question_id": 4901,
+                    "content": "<p>Kiểm so&aacute;t</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14114,
+                    "status": 1
+                },
+                {
+                    "id": 15292,
+                    "question_id": 4901,
+                    "content": "<p>Mua vật liệu</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14115,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4902,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Theo bạn, người giữ xe sẽ giữ vai tr&ograve; l&agrave; g&igrave; của một qu&aacute;n caf&eacute;?&nbsp;</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15293,
+                    "question_id": 4902,
+                    "content": "<p>L&agrave; xương sống của qu&aacute;n caf&eacute;</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14116,
+                    "status": 1
+                },
+                {
+                    "id": 15294,
+                    "question_id": 4902,
+                    "content": "<p>L&agrave; bộ mặt của qu&aacute;n caf&eacute;</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14117,
+                    "status": 1
+                },
+                {
+                    "id": 15295,
+                    "question_id": 4902,
+                    "content": "<p>Kh&ocirc;ng đ&oacute;ng vai tr&ograve; g&igrave; hết</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14118,
+                    "status": 1
+                },
+                {
+                    "id": 15296,
+                    "question_id": 4902,
+                    "content": "<p>Vừa l&agrave; bộ mặt, vừa l&agrave; xương sống của qu&aacute;n caf&eacute;</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14119,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4903,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Theo bạn những vị tr&iacute; kh&aacute;c c&oacute; thể c&oacute; của qu&aacute;n bao gồm những vị tr&iacute; n&agrave;o?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15297,
+                    "question_id": 4903,
+                    "content": "<p>Sale, Marketing, Chăm s&oacute;c kh&aacute;ch h&agrave;ng, Kiểm to&aacute;n</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14120,
+                    "status": 1
+                },
+                {
+                    "id": 15298,
+                    "question_id": 4903,
+                    "content": "<p>Sale, Marketing, Chăm s&oacute;c kh&aacute;ch h&agrave;ng, Kế to&aacute;n</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14121,
+                    "status": 1
+                },
+                {
+                    "id": 15299,
+                    "question_id": 4903,
+                    "content": "<p>Gi&aacute;m đốc, Marketing, Chăm s&oacute;c kh&aacute;ch h&agrave;ng, Kiểm to&aacute;n</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14122,
+                    "status": 1
+                },
+                {
+                    "id": 15300,
+                    "question_id": 4903,
+                    "content": "<p>Sale, Marketing, Chăm s&oacute;c kh&aacute;ch h&agrave;ng</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14123,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4904,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Đối tượng n&agrave;o n&ecirc;n tạo event l&agrave; những chương tr&igrave;nh ca nhạc?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15301,
+                    "question_id": 4904,
+                    "content": "<p>Học sinh- Sinh vi&ecirc;n</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14124,
+                    "status": 1
+                },
+                {
+                    "id": 15302,
+                    "question_id": 4904,
+                    "content": "<p>C&ocirc;ng nh&acirc;n vi&ecirc;n chức</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14125,
+                    "status": 1
+                },
+                {
+                    "id": 15303,
+                    "question_id": 4904,
+                    "content": "<p>Người đi l&agrave;m</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14126,
+                    "status": 1
+                },
+                {
+                    "id": 15304,
+                    "question_id": 4904,
+                    "content": "<p>Cả 3 đối tượng tr&ecirc;n</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14127,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4905,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Khi l&agrave;m c&aacute;c chương tr&igrave;nh khuyến m&atilde;i bạn n&ecirc;n l&agrave;m mỗi th&aacute;ng mấy lần?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15305,
+                    "question_id": 4905,
+                    "content": "<p>1 đến 2 lần</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14128,
+                    "status": 1
+                },
+                {
+                    "id": 15306,
+                    "question_id": 4905,
+                    "content": "<p>2 đến 3 lần</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14129,
+                    "status": 1
+                },
+                {
+                    "id": 15307,
+                    "question_id": 4905,
+                    "content": "<p>3 đến 4 lần</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14130,
+                    "status": 1
+                },
+                {
+                    "id": 15308,
+                    "question_id": 4905,
+                    "content": "<p>4 đến 5 lần</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14131,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4906,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>N&ecirc;n l&agrave;m thẻ VIP cho những kh&aacute;ch h&agrave;ng n&agrave;o?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15309,
+                    "question_id": 4906,
+                    "content": "<p>Kh&aacute;ch v&atilde;ng lai</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14132,
+                    "status": 1
+                },
+                {
+                    "id": 15310,
+                    "question_id": 4906,
+                    "content": "<p>Kh&aacute;ch h&agrave;ng thường xuy&ecirc;n tới qu&aacute;n</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14133,
+                    "status": 1
+                },
+                {
+                    "id": 15311,
+                    "question_id": 4906,
+                    "content": "<p>Học sinh- Sinh vi&ecirc;n</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14134,
+                    "status": 1
+                },
+                {
+                    "id": 15312,
+                    "question_id": 4906,
+                    "content": "<p>Cả 3 trường hợp tr&ecirc;n</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14135,
+                    "status": 1
+                }
+            ]
+        },
+        {
+            "id": 4907,
+            "course_id": 491,
+            "type": 1,
+            "content": "<p>Theo bạn, đối tượng l&agrave;m combo bao gồm những ai?</p>",
+            "image_url": "",
+            "status": 1,
+            "is_deleted": false,
+            "number_of_dots": null,
+            "parent_id": 0,
+            "order": 0,
+            "answer_explain": null,
+            "sound_url": null,
+            "video_embed": null,
+            "score": 1,
+            "answers": [
+                {
+                    "id": 15313,
+                    "question_id": 4907,
+                    "content": "<p>Gia đ&igrave;nh</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14136,
+                    "status": 1
+                },
+                {
+                    "id": 15314,
+                    "question_id": 4907,
+                    "content": "<p>Bạn b&egrave;</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14137,
+                    "status": 1
+                },
+                {
+                    "id": 15315,
+                    "question_id": 4907,
+                    "content": "<p>Người y&ecirc;u</p>",
+                    "image_url": null,
+                    "is_correct": false,
+                    "order": 14138,
+                    "status": 1
+                },
+                {
+                    "id": 15316,
+                    "question_id": 4907,
+                    "content": "<p>Cả 3 trường hợp tr&ecirc;n</p>",
+                    "image_url": null,
+                    "is_correct": true,
+                    "order": 14139,
+                    "status": 1
+                }
+            ]
+        }
+    ],
+    "_links": {
+        "self": {
+            "href": "https://staging.api-kynabiz.vn/v1/questions?quiz_id=871&expand=answers&per-page=50&page=1"
+        }
+    },
+    "_meta": {
+        "totalCount": 13,
+        "pageCount": 1,
+        "currentPage": 1,
+        "perPage": 50
+    }
+}

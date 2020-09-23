@@ -152,8 +152,8 @@ public class Xml {
         }
     }
 
-    public void setAttributeTextByXpath(String tagName, String attributeName, String value){
-        NodeList nodes = getElementsByXpath(tagName);
+    public void setAttributeTextByXpath(String xpath, String attributeName, String value){
+        NodeList nodes = getElementsByXpath(xpath);
         Node node = nodes.item(0);
         ((Element)node).setAttribute(attributeName, value);
     }
@@ -231,7 +231,7 @@ public class Xml {
 
     public void setTextsByTagNameByIndex(String tagName, String value,int index) {
         NodeList nodes = getElementsByTagName(tagName);
-            nodes.item(index).setTextContent(value);
+        nodes.item(index).setTextContent(value);
     }
     public String getTextByTagNameAndIndex(String tagName,int index) {
         NodeList nodes = getElementsByTagName(tagName);
@@ -241,7 +241,7 @@ public class Xml {
         NodeList nodes = getElementsByXpath(tagName);
         int count=0;
         for (int i = 0; i < nodes.getLength(); i++) {
-           String value= nodes.item(i).getNodeValue();
+            String value= nodes.item(i).getNodeValue();
             if(value.trim().equalsIgnoreCase(text.trim()))
                 count=count+1;
         }
