@@ -1,0 +1,15 @@
+{
+    "status": {
+        "code": 200,
+        "message": "success"
+    },
+    "data": {
+        "full_name": "Trần Quốc Lợi",
+        "avatar": "avatar/2020/03/09/5e65b3dfbc646.jpg",
+        "course_complete": "00",
+        "course_not_learn": "00",
+        "roles": [
+            "ROLE_EMPLOYEE"
+        ]
+    }
+}

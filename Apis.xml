@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RegressionSuite" verbose="2">
+    <test name="test1" parallel="methods" thread-count="2">
+        <packages>
+            <package name="suite.regression.APIs.RestApis"/>
+            <package name="suite.regression.APIs.RestApis.KynaBizApis"/>
+        </packages>
+    </test>
+</suite>

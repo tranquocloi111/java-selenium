@@ -1,0 +1,525 @@
+{
+    "status": {
+        "code": 200,
+        "message": "success"
+    },
+    "data": {
+        "course_name": "30 bí quyết quản lý thời gian hiệu quả",
+        "attach_file": [
+            {
+                "file_name": "168 Planning sheet",
+                "url": "https://media.kyna.vn/uploads/courses/784/docs/document-1504583302.pdf"
+            },
+            {
+                "file_name": "Mô Tả công việc trong 24h",
+                "url": "https://media.kyna.vn/uploads/courses/784/docs/document-1504668558.pdf"
+            },
+            {
+                "file_name": "MA TRẬN CÔNG VIỆC EISENHOWER",
+                "url": "https://media.kyna.vn/uploads/courses/784/docs/document-1504668582.pdf"
+            },
+            {
+                "file_name": "Blanking thing to do list",
+                "url": "https://media.kyna.vn/uploads/courses/784/docs/document-1504668593.pdf"
+            }
+        ],
+        "chapter": [
+            {
+                "chapter_name": "Giới Thiệu",
+                "number_lesson": 1,
+                "section": [
+                    {
+                        "section_name": "Giới Thiệu Về Vietnamworks Learning for Enterprise",
+                        "lesson": [
+                            {
+                                "id": 0,
+                                "content": "https://s3-ap-southeast-1.amazonaws.com/learning-static.vietnamworks.com/Intro/index.m3u8",
+                                "status": 1,
+                                "type": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "chapter_name": "PHẦN 1: Hiểu đúng về quản trị thời gian",
+                "number_lesson": 6,
+                "section": [
+                    {
+                        "section_name": "Bài 1 : Chuẩn bị gì để chinh phục khóa học này",
+                        "lesson": [
+                            {
+                                "id": 1,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai01_mp4OfGnl4mRPivyp7TVfpZXpSrxsiwCv0QogpB9fadBdIhn2ESGqI5E9k3oNifXHl4U12FDKejsI0DElWENtuZFAXZljC.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 2 : Tài khoản mặc định và ngân hàng thời gian",
+                        "lesson": [
+                            {
+                                "id": 2,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai02_mp41lGebBzRPBsYc6kpNVe5ubcfrjGd6JYsucGgw4UIx8780sFiC8uIdGIpmnr0CfaRg92NvTKd0QBDVexrppeNfnqTI7.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 3 : Bình thông nhau",
+                        "lesson": [
+                            {
+                                "id": 3,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai03_mp43xIZGgOMKJ9yGEBoiZm1NLHIU7Lf06bkJ1Y7lWD9N05wvBgkvhkBNNRGZN5JWSZj1kSe4JoBNFRGlj9K6vCFASZ6Sn.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 4 : Rút ngắn thời gian hoàn thành công việc là kéo dài thời gian sống",
+                        "lesson": [
+                            {
+                                "id": 4,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai04_mp4q8PdA7LTGWi71JWRXHc5LqgcOvbcWZOgVMCOauah3eUqNghX3UwiJjzqS3EWKznSh7pqYRtEv4nn6xpFPWzOeSrr4N.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 5 : Kẻ lấy cắp thời gian",
+                        "lesson": [
+                            {
+                                "id": 5,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai05_mp4fBAwxwkg4iSZF6ukAN9gTm99emzAXRB87VKvcAriDucXT5n9S7kL5mJRoB2TsBLZElN9Ti23As6HMvCOMCc1OV8frY.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 6 : Hướng tới tự do thời gian",
+                        "lesson": [
+                            {
+                                "id": 6,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai06_mp4g8mNym44J0emqXU19j1Ky2IbREExvcnDcRSEsZsCSZ0fHIqUdDn5jy1MBK3p9YWLfWnn6waVm9pQ6eXShPcZUCcAvF.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "chapter_name": "PHẦN 2: Công cụ quản trị thời gian hiệu quả",
+                "number_lesson": 18,
+                "section": [
+                    {
+                        "section_name": "Bài 7 : Bí Quyết 1 : Mẫu bút chì và quyển sổ tay",
+                        "lesson": [
+                            {
+                                "id": 7,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai07_mp4PmzjkWyFdsjS525NjOf4jTXAJOS3df9OjB3b4aKJyo3ccO3Rh4JxC3ZO362mlUZmFBJT5xmZedFw6Wq93g4XZ6FGdV.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 8 : Bí Quyết 2 : 3 câu hỏi thần chú trước khi ngủ",
+                        "lesson": [
+                            {
+                                "id": 8,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai08_mp4bjisQMGDgi3ZGqcJog4WHxXSr7E0Gk4FHWCciyzRIGAb88iTomXVvhVotnCkPzEdfijlD3frKC6NXTIpvNIyeOZbhf.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 9 : Bí Quyết 3 : 3 câu thần chú chào ngày mới",
+                        "lesson": [
+                            {
+                                "id": 9,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai09_mp4CrtO9GH8GzQx69YrEIr3RFRxHsQm7nRSHiDIYf2b0iWVRfuPmQLHNzfR1T8l7k67jEn2sFxEiRX6k85VZnd34umLEt.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 10 : Bí Quyết 4 : Công cụ Eisenhower Matrix",
+                        "lesson": [
+                            {
+                                "id": 10,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai10_mp4dou1drg442v1ZlM8udzhFspEEcqLKrDPrUZl5nAige26lPyVZzu9fSQsy4NcrQKw2ahIq6ZVu9TpNBFew686ljzThU.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 11 : Bí Quyết 5 : Danh mục To - Do",
+                        "lesson": [
+                            {
+                                "id": 11,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai11_mp4wgq253q6sJokR5dDaXx9n6Mc7h6eXtfdjRzpKa20JjVXnfHkzgJNFVke5KZ96euW9pghveTimHFuigD22ONhyS9fdF.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 12 : Bí Quyết 6 : Kế hoạch 168",
+                        "lesson": [
+                            {
+                                "id": 12,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai12_mp4lDgpSvZLKRGkZxjXOnLcKwZsqCaQKU7UzGpZpG6dzGiDMcNdHQ5nUwb7YOP8v7cOTjqC76dIB932DaxS4nXyZ3M2ap.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            },
+                            {
+                                "id": 13,
+                                "content": "<p>Download mẫu&nbsp;<strong>168 Planning worksheet</strong>&nbsp;ở phần&nbsp;<strong>T&agrave;i liệu</strong>&nbsp;ph&iacute;a b&ecirc;n phải.</p>",
+                                "type": 1,
+                                "status": ""
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 13 : Bí Quyết 7 : Kế hoạch 31",
+                        "lesson": [
+                            {
+                                "id": 14,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai13_mp40iKszpcaCVgAjUgFLEYVw6WT46Bax3nZVmtReTYC77aRTiNbbMCoFptUhsPHrgnwAhExLZoaTdpjdDV2XfLJC0NKgV.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            },
+                            {
+                                "id": 15,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/13b_mp48sAT9SDEjwxS3gf7nUvFBjbZxJtX6s0sACO0NbuCQmyCuZzZytzBelK5C6uG0TTdYc5lWCDNJyDAdJIEVJc8CNK9mA.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            },
+                            {
+                                "id": 16,
+                                "content": "<p>C&aacute;c bạn dowload c&aacute;c biểu mẫu về l&agrave;m&nbsp;</p>\r\n\r\n<p>Blank thing to do</p>\r\n\r\n<p>Ma trận quản l&iacute; việc l&agrave;m</p>\r\n\r\n<p>M&ocirc; tả c&ocirc;ng vi&ecirc;c 24h trong ng&agrave;y</p>\r\n\r\n<p>&nbsp;</p>",
+                                "type": 1,
+                                "status": ""
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 14 : Bí Quyết 8 : Kế hoạch 90 ngày",
+                        "lesson": [
+                            {
+                                "id": 17,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai14_mp4HGIb3dGIhhyl5Rp1mnCCErT3YaorrTR1iYxPmPBzToVO9bfD7VstfBDpt67PIWMfOGwYmLeuZ6eobV41c0kNXy05Q8.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            },
+                            {
+                                "id": 18,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/14b_mp4FtQdVuJV21ZFDNOaXIUfsnlbcJWyij6A48hg15IIV6grWi5KwstpiteCR5JdOHjNjBCQ4YmtRrP5HzRqzzKhUcSWyQ.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            },
+                            {
+                                "id": 19,
+                                "content": "<p>C&aacute;c bạn dowload c&aacute;c biểu mẫu về l&agrave;m&nbsp;</p>\r\n\r\n<p>Blank thing to do</p>\r\n\r\n<p>Ma trận quản l&iacute; việc l&agrave;m</p>\r\n\r\n<p>M&ocirc; tả c&ocirc;ng vi&ecirc;c 24h trong ng&agrave;y</p>",
+                                "type": 1,
+                                "status": ""
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 15 : Bí Quyết 9 : Kĩ thuật Pomodoro",
+                        "lesson": [
+                            {
+                                "id": 20,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai15_mp4RQCfnGnPkT37ayNKmcYl3qNf9MPD5XjswRfZWjLvDWqGHSr2bZwUrI2GbZ1U51zSAVX1hvlohV7Bd4eNl3gNOPFRaa.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            },
+                            {
+                                "id": 21,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/15b_mp423FZ65A1oz0iUSxjpWD0XbLSlnjgT81Pgmyu2lIlkc5jXGUROR4IIgwX2Z8NZvQ3sjJJcr8FB86ASuNbO2Jt9GO1BO.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            },
+                            {
+                                "id": 22,
+                                "content": "<p>C&aacute;c bạn dowload c&aacute;c biểu mẫu về l&agrave;m&nbsp;</p>\r\n\r\n<p>Blank thing to do</p>\r\n\r\n<p>Ma trận quản l&iacute; việc l&agrave;m</p>\r\n\r\n<p>M&ocirc; tả c&ocirc;ng vi&ecirc;c 24h trong ng&agrave;y</p>",
+                                "type": 1,
+                                "status": ""
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 16 : Bí Quyết 10 : Chuông Ding-dong",
+                        "lesson": [
+                            {
+                                "id": 23,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai16_mp432WHy5i5x04KH8RDE0H2D2eaxltrHmrQHPzHcwx8rK6ws43FgInPevdTbBWystawHn7dimCwmQ5klgnVD6nF6DLsYG.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 17 : Bí Quyết 11 : 3 câu thần chú trong ngày",
+                        "lesson": [
+                            {
+                                "id": 24,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai17_mp4vnO4wcQ9CUnCxn4hwRcZoEEyWi4MB8RKO96FK6RM06NNPpIdBpeYTx6M2kfe3D2uP7XJh7gjolIuApArpwrk7U0JOn.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "chapter_name": "PHẦN 3: Ứng dụng công nghệ để tiết kiệm thời gian",
+                "number_lesson": 5,
+                "section": [
+                    {
+                        "section_name": "Bài 18 : Bí Quyết 12 : Đòn bẩy công nghệ",
+                        "lesson": [
+                            {
+                                "id": 25,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai18_mp4jJ9hrLTbtMkWKMMKALjzpogmqnDfsopiatNQoGmOHGmfLY1jxzVowgilJuLzDfHj5830IMT89R43Hx3cDZhZiVhtH3.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 19 : Bí Quyết 13 : Lịch làm việc",
+                        "lesson": [
+                            {
+                                "id": 26,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai19_mp46XhCtfcBatK2kVrPs91xEZExS7t8usLjbE4t8c2I9VPHGqAndG6wYvIbz2JnJsvhsTAIj5b0VUx1Nee1ELwxWkBpaE.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 20 : Bí Quyết 14 : Lập văn bản bằng giọng nói",
+                        "lesson": [
+                            {
+                                "id": 27,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai20_mp46XhCtfcBatK2kVrPs91xEZExS7t8usLjbE4t8c2I9VPHGqAndG6wYvIbz2JnJsvhsTAIj5b0VUx1Nee1ELwxWkBpaE.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 21 : Bí Quyết 15 : Ghi chú Evernote",
+                        "lesson": [
+                            {
+                                "id": 28,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai21_mp46XhCtfcBatK2kVrPs91xEZExS7t8usLjbE4t8c2I9VPHGqAndG6wYvIbz2JnJsvhsTAIj5b0VUx1Nee1ELwxWkBpaE.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 22 : Bí Quyết 16 : Kỹ thuật lưu trữ sử dụng công nghệ đám mây",
+                        "lesson": [
+                            {
+                                "id": 29,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai22_mp425J0jcSqYH8ipjT8b8cfMWOAeJfjPgdLUcQ0eVQfZcYcFEWyMVIw8WEj011sL1SENUJFHObyM5ONm2gUjsy6YOXNBH.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "chapter_name": "PHẦN 4: Kỹ năng quản trị và thực thi công việc hiệu quả để tiết kiệm thời gian",
+                "number_lesson": 7,
+                "section": [
+                    {
+                        "section_name": "Bài 23 : Bí Quyết 17 : Xử lý email",
+                        "lesson": [
+                            {
+                                "id": 30,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai23_mp4aqfNWPSRD2m9kRTvNeK9HbJCOpAqJl0O5vnE5EePzP7JYMWn2ORxzcxFYpIbGp9jAlNgWzl5ZqXFNIE5ZDF4NRm6fi.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 24 : Bí Quyết 18 : Xử lý cuộc gọi",
+                        "lesson": [
+                            {
+                                "id": 31,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai24_mp412lw5Bjp9BdIQnfq4AZ46h6kJCFC6NgqCEXuxYelWImD0PmdyZSjFOfkvUKUOGTwLg1DRvwe48xD9n9vqIP0h35TLY.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 25 : Bí Quyết 19 : Xử lý gián đoạn",
+                        "lesson": [
+                            {
+                                "id": 32,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai25_mp46BS3yrA2s3NJk334oxwfs23V1Qr6VbD3BYd0MeEDfwThB9MP1rCdKBZkNzpeogQAgwuqx9dAjyZbqa1DhGgYfzLyBI.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 26 : Bí Quyết 20 : Vượt qua trì hoãn",
+                        "lesson": [
+                            {
+                                "id": 33,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai26_mp4VnQtzXzesQwCa1qmAR5prbbIH0CDOsfzEOyOXxY5eXQaUMfKekNWJcljhEmIbYnDPhxKjBBQU431Lg3Z8SFE4QLbBE.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 27 : Bí Quyết 21 : Sắp xếp mọi thứ gọn gàng , khoa học",
+                        "lesson": [
+                            {
+                                "id": 34,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai27_mp47PVQuW0nP5CN8vbBpQyO7v4gyPxWbuBwjm1U2wZS1XAyPYYVDkfZMRknHGdDN3fSEJZYDSMv8fv5Au0QLxMPOTV3G4.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 28 : Bí Quyết 22 : Giao việc , giao quyền",
+                        "lesson": [
+                            {
+                                "id": 35,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai28_mp44R4RhkHbxL8Ny5atAqE8bQ8MUwtJc3opRFUuKDIGe0t5t6BYN2evJtSNYXrmPvu9M92kRtNrVZl94fse5ftYwmPNFv.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 29 : Bí Quyết 23 : Định tâm để sáng suốt",
+                        "lesson": [
+                            {
+                                "id": 36,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai29_mp4siorVEr2UEHAZ8b8S6uHAuIY45ETZNXLYgDtNVeV5fg82vh1PU210t3wQ1coirC5CxwSxdLx08fI4dTmVT71SW2PDv.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "chapter_name": "PHẦN 5: Những nguyên tắc cơ bản trong quản lý thời gian",
+                "number_lesson": 8,
+                "section": [
+                    {
+                        "section_name": "Bài 30 : Bí Quyết 24 : Nguyên tắc Parento",
+                        "lesson": [
+                            {
+                                "id": 37,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai30_mp4RilfAMHYyryZPEDfsMImRaMADAHw0k4bEoYG7Nk7sl4lNEGEYxKFF8QRcOVwKYsl55bHKnvVDNHUqfmPh8dOGP1RTh.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 31 : Bí Quyết 25 : Nguyên tắc Now and Here",
+                        "lesson": [
+                            {
+                                "id": 38,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai31_mp4M3Cfwn2dc5JltC5TiNHNprLDewIRwetZvTlnvlTwzZ3CvTWlVjJ5s4byywAR79qgwwv9frL5YBJnd33PlMX2q1y1vT.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 32 : Bí Quyết 26 : Nguyên tắc 180 giây",
+                        "lesson": [
+                            {
+                                "id": 39,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai32_mp49jVX0XbfuVmf7BQs0aRQFImAYiWZ0katI9n7mJY7m0QScbFZjHxtgFg3OQ9fQUjuGcLjqvOKHqEYye9gCzL562LIbV.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 33 : Bí Quyết 27 : Kỹ năng nói \" Không \"",
+                        "lesson": [
+                            {
+                                "id": 40,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai33_mp49JDMvGXc8o2mNV5i8ig6mDZWaYz1bRw2BRa6PhIrokJHOazrCimixM4wPnfKqWA8nLBZ4nbPvAVb13idfd5rb0ZKkX.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 34 : Bí QUyết 28 : Bắt đầu từ việc dễ",
+                        "lesson": [
+                            {
+                                "id": 41,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai34_mp4pZTSZmOf4FCY61Nt6TWXqZ4BsBjCJce9RC5Pke6xLPlQefpsXrMAi2foV0CsPJh0Fr2dSzyq6JVKPrpDF0ou9dpNjv.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 35 : Bí Quyết 29 : 3C - (Call, Clarity, Close) Gọi - Làm rõ & Kết",
+                        "lesson": [
+                            {
+                                "id": 42,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai35_mp4DIAVbtZS8V1Tg1kVfbCUvZXekFuBabiwsp3njNrRbpBjSNkRv8Zbbo6SqdoGCLezv2nS7Njc6CrmEMPMJT819UihZI.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Bài 36 : Bí Quyết 30 : Đừng để thời gian chết",
+                        "lesson": [
+                            {
+                                "id": 43,
+                                "content": "https://media.kyna.vn:1443/mobile/_definst_/7/8/4/784_Lesson_Bai36_mp4xEo41iTeXOB5sOkvHOufY5Glzh6RcwOXAirMQHblNNtmWqzl5oH6oHnwnu4o33YB2yfiiSEJdfCYHFIM5DR2SZLw1T.mp4/playlist.m3u8?v=1585888342",
+                                "status": "",
+                                "type": 0
+                            }
+                        ]
+                    },
+                    {
+                        "section_name": "Tiểu luận khóa học",
+                        "lesson": [
+                            {
+                                "id": 44,
+                                "content": "<p>C&acirc;u 1. Ph&acirc;n biệt v&agrave; ph&acirc;n t&iacute;ch nội dung cụ thể của Kế hoạch 168, Kế hoạch 31 v&agrave; Kế hoạch 90.</p>\r\n\r\n<p>C&acirc;u 2.&nbsp; Tr&igrave;nh b&agrave;y ngắn gọn nguy&ecirc;n tắc quản l&yacute; thời gian Parento.</p>\r\n\r\n<p>&nbsp;</p>",
+                                "type": 1,
+                                "status": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

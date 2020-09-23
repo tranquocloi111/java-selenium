@@ -1,0 +1,217 @@
+{
+    "items": [
+        {
+            "id": 223,
+            "name": "Nhóm khóa học của Giảng viên Nguyễn Thanh Minh",
+            "courses": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 12
+                },
+                {
+                    "id": 14
+                },
+                {
+                    "id": 15
+                }
+            ]
+        },
+        {
+            "id": 224,
+            "name": "Nhóm khóa học khám phá bản thân",
+            "courses": [
+                {
+                    "id": 12
+                },
+                {
+                    "id": 6
+                },
+                {
+                    "id": 21
+                }
+            ]
+        },
+        {
+            "id": 225,
+            "name": "Nhóm khóa học kỹ năng mềm cần thiết cho người đi làm",
+            "courses": [
+                {
+                    "id": 29
+                },
+                {
+                    "id": 2
+                },
+                {
+                    "id": 3
+                },
+                {
+                    "id": 5
+                },
+                {
+                    "id": 12
+                },
+                {
+                    "id": 21
+                },
+                {
+                    "id": 27
+                },
+                {
+                    "id": 1
+                },
+                {
+                    "id": 30
+                },
+                {
+                    "id": 14
+                },
+                {
+                    "id": 4
+                }
+            ]
+        },
+        {
+            "id": 226,
+            "name": "Nhóm khóa học nuôi dạy con cái của Ths. Trần Thị Ái Liên",
+            "courses": [
+                {
+                    "id": 16
+                },
+                {
+                    "id": 13
+                },
+                {
+                    "id": 11
+                },
+                {
+                    "id": 47
+                },
+                {
+                    "id": 48
+                }
+            ]
+        },
+        {
+            "id": 227,
+            "name": "Kỹ năng dành cho người đi làm gói Cơ bản",
+            "courses": [
+                {
+                    "id": 5
+                },
+                {
+                    "id": 14
+                },
+                {
+                    "id": 27
+                }
+            ]
+        },
+        {
+            "id": 228,
+            "name": "Nhóm khóa học của Ths. Nguyễn Hoàng Khắc Hiếu",
+            "courses": [
+                {
+                    "id": 2
+                },
+                {
+                    "id": 3
+                },
+                {
+                    "id": 6
+                },
+                {
+                    "id": 5
+                }
+            ]
+        },
+        {
+            "id": 229,
+            "name": "Kỹ năng tạo dựng mối quan hệ nơi công sở",
+            "courses": [
+                {
+                    "id": 3
+                },
+                {
+                    "id": 1
+                },
+                {
+                    "id": 21
+                },
+                {
+                    "id": 27
+                }
+            ]
+        },
+        {
+            "id": 230,
+            "name": "Kỹ năng dành cho người đi làm gói Nâng cao",
+            "courses": [
+                {
+                    "id": 5
+                },
+                {
+                    "id": 14
+                },
+                {
+                    "id": 27
+                },
+                {
+                    "id": 29
+                },
+                {
+                    "id": 12
+                }
+            ]
+        },
+        {
+            "id": 231,
+            "name": "Nhóm khóa học Tự tin thể hiện bản thân và tạo dựng mối quan hệ",
+            "courses": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 5
+                },
+                {
+                    "id": 27
+                }
+            ]
+        },
+        {
+            "id": 232,
+            "name": "Kỹ năng dành cho người đi làm Trọn bộ",
+            "courses": [
+                {
+                    "id": 5
+                },
+                {
+                    "id": 14
+                },
+                {
+                    "id": 27
+                },
+                {
+                    "id": 29
+                },
+                {
+                    "id": 12
+                },
+                {
+                    "id": 4
+                },
+                {
+                    "id": 28
+                }
+            ]
+        }
+    ],
+    "_meta": {
+        "totalCount": 199,
+        "pageCount": 10,
+        "currentPage": 0,
+        "perPage": 10
+    }
+}
