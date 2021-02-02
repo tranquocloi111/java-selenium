@@ -11,7 +11,7 @@ public class DateTimePicker extends BasePage {
     WebElement dateTimePickerTBody;
 
     public DateTimePicker(WebElement webElement){
-        driver = DriverFactory.getInstance().getDriver();
+        driver = DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']"));
         dateTimePickerTHead= webElement.findElement(By.xpath("//div[@class='datepicker-days']//thead"));
         dateTimePickerTBody=webElement.findElement(By.xpath("//div[@class='datepicker-days']//tbody"));
     }

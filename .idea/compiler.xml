@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tescomobile" />
-        <module name="JavaFramework - Copy" />
-        <module name="JavaFramework-VLE" />
         <module name="JavaFramework" />
+        <module name="JavaFramework - Copy" />
+        <module name="tescomobile" />
+        <module name="Skedulo" />
         <module name="JavaFramework-StandAlone" />
+        <module name="JavaFramework-VLE" />
       </profile>
     </annotationProcessing>
   </component>

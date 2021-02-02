@@ -3,7 +3,7 @@
 <suite name="RegressionSuite" verbose="2">
     <test name="test1" parallel="methods" thread-count="1">
         <classes>
-          <class name="suite.regression.UI.CreateCompanyAdmin" />
+          <class name="suite.regression.UI.ShoppingOnAmazoneTC" />
             <class name="suite.regression.UI.CreateContract" />
         </classes>
     </test>
