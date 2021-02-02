@@ -16,7 +16,7 @@ import java.util.*;
 public class BasePage {
 
     public BasePage() {
-        PageFactory.initElements(DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")), this);
+        PageFactory.initElements(DriverFactory.getInstance().getDriver(), this);
     }
 
     //region Useful actions
@@ -163,13 +163,13 @@ public class BasePage {
                 return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
             }
         };
-        WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")), specifiedTimeout);
+        WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(), specifiedTimeout);
         wait.until(pageLoadCondition);
     }
 
 
     protected WebDriver getDriver() {
-        return DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']"));
+        return DriverFactory.getInstance().getDriver();
     }
 
     public WebElement findTdByLabelAndIndex(String lbl, int index) {
@@ -279,7 +279,7 @@ public class BasePage {
     }
 
     public void backToPreviousPage() {
-        DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).navigate().back();
+        DriverFactory.getInstance().getDriver().navigate().back();
     }
 
     public WebDriver switchFrameByName(String name) {
@@ -386,12 +386,12 @@ public class BasePage {
 
     protected WebElement findLable(String label) {
         String xpath = String.format("//label[normalize-space(text())='%s']", label);
-        return DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).findElement(By.xpath(xpath));
+        return DriverFactory.getInstance().getDriver().findElement(By.xpath(xpath));
     }
 
     protected List<WebElement> findLables(String label) {
         String xpath = String.format("//label[normalize-space(text())='%s']", label);
-        return DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).findElements(By.xpath(xpath));
+        return DriverFactory.getInstance().getDriver().findElements(By.xpath(xpath));
     }
 
     protected WebElement findInputByLabel(String label) {
@@ -417,7 +417,7 @@ public class BasePage {
 
     protected WebElement findButtonBy(String Text) {
         String xpath = String.format("//button[normalize-space(text())='%s']", Text);
-        return DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).findElement(By.xpath(xpath));
+        return DriverFactory.getInstance().getDriver().findElement(By.xpath(xpath));
     }
 
     protected WebElement findSelectByLabel(String label) {
@@ -449,7 +449,7 @@ public class BasePage {
 
     protected WebElement findSpanByText(String text) {
         String xpath = String.format("//span[text()='%s']", text);
-        return DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).findElement(By.xpath(xpath));
+        return DriverFactory.getInstance().getDriver().findElement(By.xpath(xpath));
     }
 
     protected List<WebElement> findSpansByLabel(String label) {
@@ -500,7 +500,7 @@ public class BasePage {
     }
 
     public static WebElement getAElementByText(String text) {
-        List<WebElement> webElementList = DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).findElements(By.xpath("//a"));
+        List<WebElement> webElementList = DriverFactory.getInstance().getDriver().findElements(By.xpath("//a"));
         for (WebElement el : webElementList) {
             if (el.getText().equalsIgnoreCase(text))
                 return el;
@@ -509,11 +509,11 @@ public class BasePage {
     }
 
     public static List<WebElement> getAllAElementsById(String id) {
-        return DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).findElements(By.id(id));
+        return DriverFactory.getInstance().getDriver().findElements(By.id(id));
     }
     public static List<WebElement> getAllButtonsByText(String text) {
         String xpath = String.format("//button[normalize-space('%s')]",text);
-        return DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).findElements(By.xpath(xpath));
+        return DriverFactory.getInstance().getDriver().findElements(By.xpath(xpath));
     }
 
 
